@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400");
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container .page_1 {
+  background-color: #262526;
+  height: auto;
+  background-image: url("../img/fon_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1024px;
+  width: 100%;
+  padding-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container .page_1 a.logo {
+  width: 15%;
+  margin: 0 10%;
+  height: 4rem;
+  text-align: center;
+}
+
+.container .page_1 a.logo .logo_s {
+  pointer-events: none;
+}
+
+.container .page_1 a.logo:hover .logo_s {
+  opacity: 0.2;
+}
+
+.container .page_1 nav {
+  padding-top: 0.4rem;
+  height: 2rem;
+}
+
+.container .page_1 nav .menu li {
+  list-style-type: none;
+  float: left;
+}
+
+.container .page_1 nav .menu li a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 0 1rem 0 1rem;
+}
+
+.container .page_1 nav .menu li a:hover {
+  color: #c7b29a;
+}
+
+.container .page_1 a.cart {
+  padding: 1.3rem 0 0 1.5rem;
+  width: 1%;
+  height: 2rem;
+}
+
+.container .page_1 a.cart .cart_s {
+  pointer-events: none;
+}
+
+.container .page_1 a.cart:hover .cart_s {
+  opacity: 0.2;
+}
+
+.container .page_1 .search {
+  width: 1%;
+  height: 3rem;
+  display: block;
+  padding: 1.3rem 0 0 1.5rem;
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .page_1 .search .search_s {
+  pointer-events: none;
+}
+
+.container .page_1 .search:hover .search_s {
+  opacity: 0.2;
+}
+/*# sourceMappingURL=style.css.map */
