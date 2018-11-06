@@ -45,10 +45,9 @@ header {
   background-image: url("../img/fon_photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1024px;
+  height: auto;
   width: 100%;
   padding-top: 2.5rem;
-  position: relative;
 }
 
 header .header {
@@ -161,6 +160,7 @@ header .text {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-width: 900px;
 }
 
 header .text .slider_arrow_left {
@@ -258,5 +258,40 @@ header .text a.getstarted {
 header .text a.getstarted:hover {
   -webkit-box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
   box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
+}
+
+header .text a.getstarted:focus {
+  outline: 1px solid #d3c1ad;
+}
+
+header .navi_circle_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 82px;
+  margin: 0 auto;
+  padding-top: 20em;
+  padding-bottom: 4em;
+}
+
+header .navi_circle_all a.navi_circle {
+  width: 11px;
+  height: 11px;
+  margin: 1px;
+  border-radius: 50%;
+  background-color: #ffffff60;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .navi_circle_all a.navi_circle_2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ffffff60;
+  margin: 0 1px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+a.logo svg {
+  fill: black;
+}
+
+a.logo:hover svg {
+  color: #c7b29a;
+}
+/*# sourceMappingURL=logo.css.map */

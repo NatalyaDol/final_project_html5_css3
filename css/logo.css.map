@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,CAAC,AAAA,KAAK,CAAC,GAAG,CAAC;EACP,IAAI,EAAE,KAAK;CAEd;;AACD,AAAA,CAAC,AAAA,KAAK,AAAA,MAAM,CAAC,GAAG,CAAC;EACb,KAAK,ECLW,OAAO;CDM1B",
+    "sources": [
+        "../scss/logo.scss",
+        "../scss/_color.scss"
+    ],
+    "names": [],
+    "file": "logo.css"
+}
