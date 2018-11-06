@@ -1,11 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400");
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat"), url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff"), url("../fonts/montserrat-light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff"), url("../fonts/raleway-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway"), url("../fonts/raleway-medium.woff2") format("woff2"), url("../fonts/raleway-medium.woff") format("woff"), url("../fonts/raleway-medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Raleway"), url("../fonts/raleway-semibold.woff2") format("woff2"), url("../fonts/raleway-semibold.woff") format("woff"), url("../fonts/raleway-semibold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway"), url("../fonts/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway-extrabold.woff") format("woff"), url("../fonts/raleway-extrabold.ttf") format("ttf");
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
   height: 100%;
 }
 
-.container .page_1 {
+header {
   background-color: #262526;
   height: auto;
   background-image: url("../img/fon_photo.jpg");
@@ -14,38 +48,41 @@
   height: 1024px;
   width: 100%;
   padding-top: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
 }
 
-.container .page_1 a.logo {
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header a.logo {
   width: 15%;
   margin: 0 10%;
   height: 4rem;
   text-align: center;
 }
 
-.container .page_1 a.logo .logo_s {
+header .header a.logo .logo_s {
   pointer-events: none;
 }
 
-.container .page_1 a.logo:hover .logo_s {
+header .header a.logo:hover .logo_s {
   opacity: 0.2;
 }
 
-.container .page_1 nav {
+header .header nav {
   padding-top: 0.4rem;
   height: 2rem;
 }
 
-.container .page_1 nav .menu li {
+header .header nav .menu li {
   list-style-type: none;
   float: left;
 }
 
-.container .page_1 nav .menu li a {
+header .header nav .menu li a {
   display: inline-block;
   text-decoration: none;
   font-family: Montserrat;
@@ -56,25 +93,25 @@
   padding: 0 1rem 0 1rem;
 }
 
-.container .page_1 nav .menu li a:hover {
+header .header nav .menu li a:hover {
   color: #c7b29a;
 }
 
-.container .page_1 a.cart {
+header .header a.cart {
   padding: 1.3rem 0 0 1.5rem;
   width: 1%;
   height: 2rem;
 }
 
-.container .page_1 a.cart .cart_s {
+header .header a.cart .cart_s {
   pointer-events: none;
 }
 
-.container .page_1 a.cart:hover .cart_s {
+header .header a.cart:hover .cart_s {
   opacity: 0.2;
 }
 
-.container .page_1 .search {
+header .header .search {
   width: 1%;
   height: 3rem;
   display: block;
@@ -86,11 +123,140 @@
   cursor: pointer;
 }
 
-.container .page_1 .search .search_s {
+header .header .search .search_s {
   pointer-events: none;
 }
 
-.container .page_1 .search:hover .search_s {
+header .header input.search_input {
+  background-color: inherit;
+  border: inherit;
+  outline: none;
+  border: inherit;
+  outline: none;
+  height: 2.5em;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: -1.6em;
+  margin-top: 1em;
+  z-index: 1;
+}
+
+header .header input.search_input:focus {
+  background-color: #c7b29a;
+  padding: 5px;
+}
+
+header .header .search:hover .search_s {
   opacity: 0.2;
+}
+
+header .text {
+  padding: 15rem 9.375rem 0 9.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .text .slider_arrow_left {
+  display: block;
+  width: 40px;
+  height: 73px;
+  position: relative;
+}
+
+header .text .slider_arrow_right {
+  display: block;
+  width: 40px;
+  height: 73px;
+  position: relative;
+}
+
+header .text .slider_arrow_left:after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px solid #d3c1ad;
+  border-left: 2px solid #d3c1ad;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .text .slider_arrow_right::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .text .slider_arrow_left:hover:after {
+  border-bottom: 2px solid #998675;
+  border-left: 2px solid #998675;
+}
+
+header .text .slider_arrow_right:hover:after {
+  border-top: 2px solid #998675;
+  border-right: 2px solid #998675;
+}
+
+header .text h2, header .text h1, header .text p {
+  font-family: Raleway;
+  color: #ffffff;
+  text-align: center;
+  margin: 0.875rem 0;
+}
+
+header .text h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+header .text h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+header .text p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+header .text a.getstarted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.643;
+  text-align: center;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #998675;
+  width: 100px;
+  margin: auto;
+  margin-top: 3.25rem;
+}
+
+header .text a.getstarted:hover {
+  -webkit-box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
 }
 /*# sourceMappingURL=style.css.map */
