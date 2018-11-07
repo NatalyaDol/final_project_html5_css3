@@ -63,12 +63,12 @@ header .header a.logo {
   text-align: center;
 }
 
-header .header a.logo .logo_s {
-  pointer-events: none;
+header .header a.logo svg {
+  fill: #ffffff;
 }
 
-header .header a.logo:hover .logo_s {
-  opacity: 0.2;
+header .header a.logo:hover svg {
+  fill: #c7b299;
 }
 
 header .header nav {
@@ -84,7 +84,7 @@ header .header nav .menu li {
 header .header nav .menu li a {
   display: inline-block;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, Georgia, serif;
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 300;
@@ -210,7 +210,7 @@ header .text .slider_arrow_right:hover:after {
 }
 
 header .text h2, header .text h1, header .text p {
-  font-family: Raleway;
+  font-family: Raleway, Georgia, serif;
   color: #ffffff;
   text-align: center;
   margin: 0.875rem 0;
@@ -240,7 +240,7 @@ header .text a.getstarted {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, Georgia, serif;
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 700;
@@ -251,6 +251,7 @@ header .text a.getstarted {
   border-radius: 3px;
   background-color: #998675;
   width: 100px;
+  min-width: 100px;
   margin: auto;
   margin-top: 3.25rem;
 }
@@ -293,5 +294,84 @@ header .navi_circle_all a.navi_circle_2 {
   border-radius: 50%;
   border: 1px solid #ffffff60;
   margin: 0 1px;
+}
+
+.about_us_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.about_us_all .about_us {
+  width: 305px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 1rem 0.5rem 0;
+}
+
+.about_us_all .about_us span {
+  width: 100%;
+  font-family: Raleway, Georgia, serif;
+  color: #555555;
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 189px;
+}
+
+.about_us_all .about_us p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.about_us_all .about_us svg {
+  fill: #555555;
+}
+
+.about_us_all .about_us:hover svg {
+  fill: #c7b299;
+}
+
+.about_us_all a.about_us svg,
+.about_us_all span,
+.about_us_all p {
+  margin: 1em 0;
+}
+
+.about_us_all .about_us::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #f1eee9;
+  margin-top: 33px;
+}
+
+.about_us_all .about_us:hover span {
+  color: #c7b299;
+}
+
+.about_us_all .about_us:hover:after {
+  background-color: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */
