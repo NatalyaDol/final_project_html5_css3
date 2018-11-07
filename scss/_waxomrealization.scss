@@ -1,0 +1,58 @@
+@import '_color';
+@import '_mixins';
+
+.waxom_is_realization {
+    background-color:  #fbfaf8;
+    z-index: 0;
+    min-height: 700px;
+    height: auto;
+    padding-top: 83px;
+    position: relative;
+    h2 {
+        @include h2_light_brown;
+    } 
+    p {
+        @include p_dark;
+        margin-bottom: 80px; 
+    }
+    
+   img.browser_center {
+       display: block;
+       width: 770px;
+       margin: auto;
+       z-index: 4;
+       height: 482px;
+       margin-top: auto;
+    }
+
+    img.browser_left, img.browser_right {
+        width: 770px;
+        height: 400px;
+        display: block;
+        position: absolute;
+        margin-top: 82px;
+        cursor: pointer;
+        
+        z-index: -1;
+    }
+    img.browser_left {
+        left: 8%;
+    }
+    img.browser_right {
+        top: 302px; 
+        right: 8%;
+    }
+
+    img.browser_left:hover, img.browser_right:hover {
+        z-index: 9;
+    }
+    img.browser_left:active, img.browser_right:active {
+        z-index: 9;
+        margin-top: auto;
+        height: 482px;
+        width: auto;
+    }
+   
+    
+}
+  

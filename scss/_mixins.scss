@@ -1,7 +1,16 @@
 @mixin h2_light_brown {
-    font-family: Raleway,Georgia, serif;
+    font-family: Raleway, Georgia, serif;
     color:  #555555;
     font-size: 1.875rem;
     font-weight: 600;
     text-align: center;
+}
+
+@mixin p_dark {
+    font-family: Montserrat, Georgia, serif;
+    color:  #8c8c8c;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+    text-align: center;  
 }

@@ -52,7 +52,7 @@ header {
             }
         }
         a.cart:hover .cart_s {
-            opacity: 0.2;
+            opacity: 0.3;
         }
         .search {
             width: 1%;
@@ -87,7 +87,7 @@ header {
             
         }
         .search:hover .search_s {
-            opacity: 0.2;
+            opacity: 0.3;
         }
     }
     .text {
@@ -193,7 +193,8 @@ header {
         height: 11px;
         margin: 1px;
         border-radius: 50%;
-        background-color: #ffffff60;
+        background-color: #ffffff;
+        opacity: 0.3;
         text-decoration: none;
         display: inline-block;
         text-align: center;
@@ -204,7 +205,8 @@ header {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            border: 1px solid #ffffff60;
+            border: 1px solid #ffffff;
+            opacity: 0.5;
             margin: 0 1px;
         }
     }
