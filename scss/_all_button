@@ -1,0 +1,29 @@
+a.all_button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Raleway, Georgia, serif;
+    color: $color_white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.643;
+    text-align: center;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: #998675;
+    width: 170px;
+    min-width: 170px;
+    margin: auto;
+    margin-top: 3.25rem;
+}
+
+a.all_button:hover {
+    -webkit-box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: inset 0px 0px 73px 0px rgba(0, 0, 0, 0.39);
+}
+
+a.all_button:focus {
+    outline: 1px solid #d3c1ad;
+}
