@@ -39,10 +39,32 @@
   height: 100%;
 }
 
+header .header a.logo svg {
+  fill: #ffffff;
+}
+
+header .header a.logo:hover svg {
+  fill: #c7b299;
+}
+
+.about_us_all .about_us svg {
+  fill: #555555;
+}
+
+.about_us_all .about_us:hover svg {
+  fill: #c7b299;
+}
+
+.about_us_all a.about_us svg {
+  margin: 1em 0;
+}
+
+a.our_projects_box:hover .our_projects_box_hover svg {
+  fill: #c7b299;
+}
+
 a.all_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -59,8 +81,8 @@ a.all_button {
   background-color: #998675;
   width: 170px;
   min-width: 170px;
-  margin: auto;
-  margin-top: 3.25rem;
+  margin: 4em auto;
+  height: 2em;
 }
 
 a.all_button:hover {
@@ -69,7 +91,7 @@ a.all_button:hover {
 }
 
 a.all_button:focus {
-  outline: 1px solid #d3c1ad;
+  background-color: #c7b299;
 }
 
 header {
@@ -94,14 +116,19 @@ header .header a.logo {
   margin: 0 10%;
   height: 4rem;
   text-align: center;
+  text-decoration: none;
 }
 
-header .header a.logo svg {
-  fill: #ffffff;
+header .header a.logo span {
+  font-family: Raleway, Georgia, serif;
+  color: #ffffff;
+  font-size: 2.125rem;
+  font-weight: 400;
+  text-align: right;
 }
 
-header .header a.logo:hover svg {
-  fill: #c7b299;
+header .header a.logo:hover span {
+  color: #c7b299;
 }
 
 header .header nav {
@@ -246,23 +273,25 @@ header .text h2, header .text h1, header .text p {
   font-family: Raleway, Georgia, serif;
   color: #ffffff;
   text-align: center;
-  margin: 0.875rem 0;
 }
 
 header .text h2 {
   font-size: 2.25rem;
   font-weight: 500;
+  margin: 0.875rem 0;
 }
 
 header .text h1 {
   font-size: 3.25rem;
   font-weight: 700;
+  margin: 0.875rem 0;
 }
 
 header .text p {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
+  margin: 0.875rem 0 3rem 0;
 }
 
 header .navi_circle_all {
@@ -344,14 +373,6 @@ header .navi_circle_all a.navi_circle_2 {
   font-weight: 300;
   line-height: 1.714;
   text-align: center;
-}
-
-.about_us_all .about_us svg {
-  fill: #555555;
-}
-
-.about_us_all .about_us:hover svg {
-  fill: #c7b299;
 }
 
 .about_us_all a.about_us svg,
@@ -456,7 +477,7 @@ aside {
           justify-content: center;
 }
 
-aside span {
+aside .purchase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,20 +490,20 @@ aside span {
   padding: 3% 0;
 }
 
-aside span h2, aside span p {
+aside .purchase h2, aside .purchase p {
   text-align: left;
   padding-left: 30%;
   margin: 0;
 }
 
-aside span h2 {
+aside .purchase h2 {
   font-family: Raleway, Georgia, serif;
   color: #ffffff;
   font-size: 1.75rem;
   font-weight: 400;
 }
 
-aside span h2:before {
+aside .purchase h2:before {
   content: "Waxom   ";
   font-family: Raleway, Georgia, serif;
   color: #c7b299;
@@ -491,15 +512,184 @@ aside span h2:before {
   text-align: left;
 }
 
-aside span h2:hover:before {
+aside .purchase h2:hover:before {
   content: "Waxom   ";
   color: #ffffff;
 }
 
-aside span p {
+aside .purchase p {
   font-family: Montserrat;
   color: #615855;
   font-size: 1.125rem;
   font-weight: 300;
+}
+
+.our_projects {
+  height: auto;
+  max-width: 1200px;
+  padding: 83px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our_projects h2 {
+  font-family: Raleway, Georgia, serif;
+  color: #555555;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.our_projects p {
+  font-family: Montserrat, Arial, sans-serif;
+  color: #8c8c8c;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom: 33px;
+  width: 100%;
+}
+
+.our_projects .box_for_our_projects_buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+}
+
+.our_projects .box_for_our_projects_buttons .our_projects_buttons {
+  text-align: center;
+  padding: 0.3em 2em;
+  margin: 0.3em;
+  border: 0.8px solid #99867522;
+  border-radius: 1px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: #8c8c8c;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.our_projects .box_for_our_projects_buttons .our_projects_buttons:focus {
+  background-color: #998675;
+  color: #ffffff;
+  outline: none;
+}
+
+.our_projects a.our_projects_box {
+  width: 370px;
+  height: 337px;
+  margin: 30px 15px 0 15px;
+  background-color: #fbfaf8;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box .our_projects_box_icons {
+  position: absolute;
+  opacity: 0;
+  left: 38%;
+  top: 30%;
+}
+
+.our_projects a.our_projects_box .our_projects_box_icons svg {
+  margin: 0 10px;
+  fill: #ffffff;
+}
+
+.our_projects a.our_projects_box img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box h3:before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 91px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box h3, .our_projects a.our_projects_box p {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.our_projects a.our_projects_box h3 {
+  font-family: Raleway, Georgia, serif;
+  color: #c7b29a;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.our_projects a.our_projects_box p {
+  font-family: Montserrat, Arial, sans-serif;
+  color: #d1d1d1;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.429;
+  margin-top: 0;
+}
+
+.our_projects a.our_projects_box:hover {
+  background-color: #362f2d;
+}
+
+.our_projects a.our_projects_box:hover img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box:hover h3 {
+  color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box:hover p {
+  color: #c7b299;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box:hover h3:before {
+  border-bottom: 20px solid #362f2d;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box:hover .our_projects_box_icons {
+  position: absolute;
+  opacity: 1;
+  left: 38%;
+  top: 30%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our_projects a.our_projects_box:hover .our_projects_box_icons svg:hover {
+  fill: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */

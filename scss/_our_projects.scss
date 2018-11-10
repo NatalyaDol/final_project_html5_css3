@@ -1,0 +1,140 @@
+.our_projects {
+    height: auto;
+    max-width: 1200px;
+    padding: 83px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    h2 {
+        @include h2_light_brown;
+        width: 100%;
+    } 
+    p {
+        @include p_dark;
+        margin-bottom: 33px;
+        width: 100%; 
+    }
+    .box_for_our_projects_buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        .our_projects_buttons {
+            text-align: center;
+            padding: 0.3em 2em;
+            margin: 0.3em;
+            border: 0.8px solid #99867522;
+            border-radius: 1px;
+            font-family: Montserrat, Arial, sans-serif;
+            color: #8c8c8c;
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+    
+        .our_projects_buttons:focus {
+            background-color:  #998675;
+            color: $color_white;
+            outline: none;
+        }
+
+    }
+
+    a.our_projects_box {
+        width: 370px;
+        height: 337px;
+        margin: 30px 15px 0 15px;
+        background-color:  #fbfaf8;
+        text-decoration: none;
+        position: relative;
+        transition: 1s;
+
+        .our_projects_box_icons {
+            position: absolute;
+            opacity: 0;
+            left: 38%;
+            top: 30%;
+
+            svg {
+                margin: 0 10px;
+                fill: $color_white;
+            }
+        }
+
+        img {
+            transition: 1s;
+        }
+
+        h3:before {
+            content: ''; 
+            position: absolute; 
+            left: 20px; 
+            bottom: 91px; 
+            border: 20px solid transparent;	
+            border-bottom: 20px solid #fbfaf8;
+            transition: 1s;
+        }
+        h3, p {
+            text-align: left;
+            padding-left: 30px;
+
+        }
+        h3 {
+            font-family: Raleway, Georgia, serif;
+            color:  #c7b29a;
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: Montserrat, Arial, sans-serif;
+            color:  #d1d1d1;
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.429;
+            margin-top: 0;
+        }
+    }
+
+    a.our_projects_box:hover {
+        background-color: #362f2d;
+        
+        img {
+            filter: brightness(0.5);
+            transition: 1s;
+        }
+
+        h3 {
+            color: $color_white;
+            transition: 1s;
+        }
+
+        p {
+            color: $color_brown_text;
+            transition: 1s;
+        }
+        
+        h3:before {
+            border-bottom: 20px solid #362f2d; 
+            transition: 1s;        
+        }
+
+        .our_projects_box_icons {
+            position: absolute;
+            opacity: 1;
+            left: 38%;
+            top: 30%;
+            transition: 1s;
+
+        }
+
+        .our_projects_box_icons {
+            svg:hover {
+                fill: $color_brown_text;
+            }
+        }
+    }
+}

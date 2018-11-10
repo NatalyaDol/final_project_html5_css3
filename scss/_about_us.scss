@@ -34,12 +34,6 @@
         }
         
     }
-    .about_us svg {
-        fill:   #555555;
-    }
-    .about_us:hover svg {
-        fill:  #c7b299;
-    }
     a.about_us svg,
     span,
     p {
@@ -55,9 +49,9 @@
 
     }
     .about_us:hover span {
-    color:  #c7b299;  
+    color:  $color_brown_text;  
     }
     .about_us:hover:after {
-        background-color: #c7b299;
+        background-color: $color_brown_text;
     }
 }

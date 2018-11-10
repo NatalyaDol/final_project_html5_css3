@@ -1,5 +1,5 @@
 a.all_button {
-    display: flex;
+    display: block;
     justify-content: center;
     text-decoration: none;
     font-family: Raleway, Georgia, serif;
@@ -14,8 +14,8 @@ a.all_button {
     background-color: #998675;
     width: 170px;
     min-width: 170px;
-    margin: auto;
-    margin-top: 3.25rem;
+    margin: 4em auto;
+    height: 2em;
 }
 
 a.all_button:hover {
@@ -25,5 +25,5 @@ a.all_button:hover {
 }
 
 a.all_button:focus {
-    outline: 1px solid #d3c1ad;
+    background-color: $color_brown_text;
 }

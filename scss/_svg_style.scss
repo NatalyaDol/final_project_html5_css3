@@ -1,0 +1,30 @@
+header .header {
+    a.logo svg {
+        fill: $color_white;
+    }
+    a.logo:hover svg {
+        fill: $color_brown_text;
+    }
+}
+
+.about_us_all {
+    .about_us svg {
+        fill:   #555555;
+    }
+    .about_us:hover svg {
+        fill:  $color_brown_text;
+    }
+    a.about_us svg,{
+        margin: 1em 0;
+    }
+}
+
+a.our_projects_box:hover {
+    .our_projects_box_hover{
+        & svg {
+            fill:   $color_brown_text;
+        }
+    }
+
+}
+
