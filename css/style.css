@@ -127,13 +127,13 @@ header .header {
 }
 
 header .header a.logo {
-  margin-right: 10%;
   height: 4rem;
   text-align: center;
   text-decoration: none;
 }
 
-header .header a.logo span {
+header .header span {
+  display: inline-block;
   font-family: Raleway, Georgia, serif;
   color: #ffffff;
   font-size: 2.125rem;

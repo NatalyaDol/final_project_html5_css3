@@ -12,17 +12,18 @@ header {
         align-items: center;
         justify-content: center;
         a.logo {
-            margin-right: 10%;
             height: 4rem;
             text-align: center;
             text-decoration: none;
-            span {
-                font-family: Raleway, Georgia, serif;
-                color:  #ffffff;
-                font-size: 2.125rem;
-                font-weight: 400;
-                text-align: right;
-            }
+           
+        }
+        span {
+            display: inline-block;
+            font-family: Raleway, Georgia, serif;
+            color:  #ffffff;
+            font-size: 2.125rem;
+            font-weight: 400;
+            text-align: right;
         }
         a.logo:hover span {
             color: $color_brown_text;
