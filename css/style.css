@@ -47,6 +47,15 @@ header .header a.logo:hover svg {
   fill: #c7b299;
 }
 
+header .header a.svg_content {
+  fill: #ffffff;
+  margin-left: 6rem;
+}
+
+header .header a.svg_content:hover {
+  fill: #c7b29a;
+}
+
 .about_us_all .about_us svg {
   fill: #555555;
 }
@@ -158,57 +167,32 @@ header .header nav .menu li a:hover {
   color: #c7b29a;
 }
 
-header .header a.cart {
-  padding: 0.4rem 0 0 1.5rem;
-  width: 1%;
-  height: 2rem;
-}
-
-header .header a.cart .cart_s {
-  pointer-events: none;
-}
-
-header .header a.cart:hover .cart_s {
-  opacity: 0.3;
-}
-
-header .header .search {
-  width: 1%;
-  height: 3rem;
-  display: block;
-  padding: 0.4rem 0 0 1.5rem;
-  width: 3rem;
+header input[type="search"] {
+  width: 25px;
+  height: 25px;
+  outline: none;
+  margin-left: 1rem;
+  background-image: url("../img/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: initial;
   border: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
 }
 
-header .header .search .search_s {
-  pointer-events: none;
-}
-
-header .header input.search_input {
-  background-color: inherit;
-  border: inherit;
-  outline: none;
-  border: inherit;
-  outline: none;
-  height: 2.5em;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-left: -1.6em;
-  margin-top: 1em;
-  z-index: 1;
-}
-
-header .header input.search_input:focus {
-  background-color: #c7b29a;
-  padding: 5px;
-}
-
-header .header .search:hover .search_s {
+header input[type="search"]:hover {
   opacity: 0.3;
+}
+
+header input[type="search"]:focus {
+  width: 300px;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+  background-position: right;
+  background-color: #c7b29a;
+  height: 2rem;
+  border-radius: 5px;
+  color: #ffffff;
+  padding-left: 1rem;
 }
 
 header .text {

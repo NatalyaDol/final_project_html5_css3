@@ -5,7 +5,15 @@ header .header {
     a.logo:hover svg {
         fill: $color_brown_text;
     }
+    a.svg_content {
+        fill: $color_white;
+        margin-left: 6rem;
+    }
+    a.svg_content:hover {
+        fill: $color_hover_brown;
+    }
 }
+
 
 .about_us_all {
     .about_us svg {

@@ -51,52 +51,33 @@ header {
                 color: #c7b29a;
             }
         }
-        a.cart {
-            padding: 0.4rem 0 0 1.5rem;
-            width: 1%;
-            height: 2rem;
-            .cart_s {
-                pointer-events: none; //*1 позволяет ссылке <а> быть активной и находиться над svg
-            }
-        }
-        a.cart:hover .cart_s {
-            opacity: 0.3;
-        }
-        .search {
-            width: 1%;
-            height: 3rem;
-            display: block;
-            padding: 0.4rem 0 0 1.5rem;
-            width: 3rem;
-            border: none;
-            background-color: transparent;
-            outline: none;
-            cursor: pointer;
-            .search_s {
-                pointer-events: none;
-            } 
-        }
-        input.search_input {
-            background-color: inherit;
-            border: inherit;
-            outline: none;
-            border: inherit;
-            outline: none;
-            height: 2.5em;
-            border-radius: 30px;
-            cursor: pointer;
-            margin-left: -1.6em;
-            margin-top: 1em;
-            z-index: 1;
-        }
-        input.search_input:focus {
-            background-color: $color_hover_brown;
-            padding: 5px;
-            
-        }
-        .search:hover .search_s {
-            opacity: 0.3;
-        }
+     }
+
+     input[type="search"] {
+        width: 25px;
+        height: 25px;
+        outline: none;
+        margin-left: 1rem;
+        background-image: url('../img/search.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: initial;
+        border: none;
+      }
+      input[type="search"]:hover {
+        opacity: 0.3;
+      }
+      
+      input[type="search"]:focus {
+        width: 300px;
+        transition: width 1s ease-out;
+        background-position: right;
+        background-color: $color_hover_brown;
+        height: 2rem;
+        border-radius: 5px;
+        color: $color_white;
+        padding-left: 1rem;
+
     }
     .text {
         padding: 15rem 9.375rem 0 9.375rem;
