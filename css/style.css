@@ -121,11 +121,13 @@ header .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header a.logo {
-  width: 15%;
-  margin: 0 10%;
+  margin-right: 10%;
   height: 4rem;
   text-align: center;
   text-decoration: none;
@@ -193,6 +195,7 @@ header input[type="search"]:focus {
   border-radius: 5px;
   color: #ffffff;
   padding-left: 1rem;
+  opacity: 1;
 }
 
 header .text {
@@ -525,6 +528,10 @@ aside .purchase p {
           justify-content: center;
 }
 
+.our_projects .all_button .project_box {
+  display: block;
+}
+
 .our_projects h2 {
   font-family: Raleway, Georgia, serif;
   color: #555555;
@@ -687,7 +694,7 @@ aside .purchase p {
 .video h2 {
   position: absolute;
   left: 40%;
-  top: 10%;
+  top: 54%;
   font-family: Raleway, Georgia, serif;
   color: #ffffff;
   font-size: 1.875rem;
@@ -698,7 +705,7 @@ aside .purchase p {
 .video p {
   position: absolute;
   left: 36.8%;
-  top: 25%;
+  top: 64%;
   font-family: Montserrat, Arial, sans-serif;
   color: #ffffff;
   font-size: 1rem;

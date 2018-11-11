@@ -6,22 +6,18 @@
     h2 {
         position: absolute;
         left: 40%;
-        top: 10%;
+        top: 54%;
         @include h2_light_white;
     }
     p {
         position: absolute;
         left: 36.8%;
-        top: 25%;
+        top: 64%;
         @include p_white;
     }
 
     #video_only {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
         min-width: 100%;
-        // min-height: 100%;
         width: auto;
         height: 705px;
 

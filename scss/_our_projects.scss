@@ -6,6 +6,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .all_button .project_box {
+        display: block;
+        
+    }
     
     h2 {
         @include h2_light_brown;
