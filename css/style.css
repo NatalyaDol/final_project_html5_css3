@@ -109,6 +109,9 @@ header .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header a.logo {
@@ -131,9 +134,8 @@ header .header a.logo:hover span {
   color: #c7b299;
 }
 
-header .header nav {
-  padding-top: 0.4rem;
-  height: 2rem;
+header .header nav ul {
+  margin: 0;
 }
 
 header .header nav .menu li {
@@ -149,7 +151,7 @@ header .header nav .menu li a {
   font-size: 0.875rem;
   font-weight: 300;
   text-align: left;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem;
 }
 
 header .header nav .menu li a:hover {
@@ -157,7 +159,7 @@ header .header nav .menu li a:hover {
 }
 
 header .header a.cart {
-  padding: 1.3rem 0 0 1.5rem;
+  padding: 0.4rem 0 0 1.5rem;
   width: 1%;
   height: 2rem;
 }
@@ -174,7 +176,7 @@ header .header .search {
   width: 1%;
   height: 3rem;
   display: block;
-  padding: 1.3rem 0 0 1.5rem;
+  padding: 0.4rem 0 0 1.5rem;
   width: 3rem;
   border: none;
   background-color: transparent;
@@ -584,7 +586,7 @@ aside .purchase p {
   cursor: pointer;
 }
 
-.our_projects .box_for_our_projects_buttons .our_projects_buttons:focus {
+.our_projects .box_for_our_projects_buttons .our_projects_buttons:hover {
   background-color: #998675;
   color: #ffffff;
   outline: none;

@@ -9,6 +9,7 @@ header {
     padding-top: 2.5rem;
     .header {
         display: flex;
+        align-items: center;
         a.logo {
             width: 15%;
             margin: 0 10%;
@@ -29,8 +30,9 @@ header {
         
         
         nav {
-            padding-top: 0.4rem;
-            height: 2rem;
+            ul {
+                margin: 0;
+            }
             .menu li {
                 list-style-type: none;
                 float: left;
@@ -43,14 +45,14 @@ header {
                 font-size: 0.875rem;
                 font-weight: 300;
                 text-align: left;
-                padding: 0 1rem 0 1rem;
+                padding: 1rem;
             }
             .menu li a:hover {
                 color: #c7b29a;
             }
         }
         a.cart {
-            padding: 1.3rem 0 0 1.5rem;
+            padding: 0.4rem 0 0 1.5rem;
             width: 1%;
             height: 2rem;
             .cart_s {
@@ -64,7 +66,7 @@ header {
             width: 1%;
             height: 3rem;
             display: block;
-            padding: 1.3rem 0 0 1.5rem;
+            padding: 0.4rem 0 0 1.5rem;
             width: 3rem;
             border: none;
             background-color: transparent;
