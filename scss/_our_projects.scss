@@ -9,7 +9,7 @@
 
     .all_button .project_box {
         display: block;
-        
+
     }
     
     h2 {
@@ -141,5 +141,8 @@
                 fill: $color_brown_text;
             }
         }
+    }
+    .box_for_button {
+        width: 100%;
     }
 }

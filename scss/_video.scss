@@ -8,12 +8,14 @@
         left: 40%;
         top: 54%;
         @include h2_light_white;
+        transition: 3s;
     }
     p {
         position: absolute;
         left: 36.8%;
         top: 64%;
         @include p_white;
+        transition: 3s;
     }
 
     #video_only {
@@ -21,9 +23,11 @@
         width: auto;
         height: 705px;
 
-        object-fit: inherit;
-
-        
+        object-fit: inherit; 
     }
-   
 }
+.video:hover h2, .video:hover p {
+    opacity: 0;
+    transition: 3s;
+}
+

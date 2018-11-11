@@ -444,10 +444,6 @@ header .navi_circle_all a.navi_circle_2 {
 
 .waxom_is_realization img.browser_left:hover, .waxom_is_realization img.browser_right:hover {
   z-index: 9;
-}
-
-.waxom_is_realization img.browser_left:active, .waxom_is_realization img.browser_right:active {
-  z-index: 9;
   margin-top: auto;
   height: 482px;
   width: auto;
@@ -686,6 +682,10 @@ aside .purchase p {
   fill: #c7b299;
 }
 
+.our_projects .box_for_button {
+  width: 100%;
+}
+
 .video {
   width: 1920px;
   position: relative;
@@ -700,6 +700,8 @@ aside .purchase p {
   font-size: 1.875rem;
   font-weight: 500;
   text-align: center;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 .video p {
@@ -712,6 +714,8 @@ aside .purchase p {
   font-weight: 300;
   line-height: 1.75;
   text-align: center;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 .video #video_only {
@@ -720,5 +724,11 @@ aside .purchase p {
   height: 705px;
   -o-object-fit: inherit;
      object-fit: inherit;
+}
+
+.video:hover h2, .video:hover p {
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 /*# sourceMappingURL=style.css.map */
