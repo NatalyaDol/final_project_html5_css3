@@ -11,10 +11,13 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        align-content: stretch;
         a.logo {
             height: 4rem;
             text-align: center;
             text-decoration: none;
+            display: flex;
+            align-items: center;
            
         }
         span {
@@ -31,6 +34,7 @@ header {
         
         
         nav {
+            margin-left: 90px;
             ul {
                 margin: 0;
             }
@@ -55,7 +59,7 @@ header {
      }
 
      input[type="search"] {
-        width: 25px;
+        width: 250px;
         height: 25px;
         outline: none;
         margin-left: 2em;
@@ -70,16 +74,15 @@ header {
       }
       
       input[type="search"]:focus {
-        width: 300px;
-        transition: width 1s ease-out;
         background-position: right;
         background-color: $color_hover_brown;
-        height: 2rem;
-        border-radius: 5px;
+        border-radius: 15px;
         color: $color_white;
         padding-left: 1rem;
         opacity: 1;
-
+        transition: 1.5s;
+        background-image: none;
+        height: 35px;
     }
     .text {
         padding: 15rem 9.375rem 0 9.375rem;

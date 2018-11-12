@@ -124,12 +124,20 @@ header .header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
 
 header .header a.logo {
   height: 4rem;
   text-align: center;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header span {
@@ -143,6 +151,10 @@ header .header span {
 
 header .header a.logo:hover span {
   color: #c7b299;
+}
+
+header .header nav {
+  margin-left: 90px;
 }
 
 header .header nav ul {
@@ -170,7 +182,7 @@ header .header nav .menu li a:hover {
 }
 
 header input[type="search"] {
-  width: 25px;
+  width: 250px;
   height: 25px;
   outline: none;
   margin-left: 2em;
@@ -186,16 +198,16 @@ header input[type="search"]:hover {
 }
 
 header input[type="search"]:focus {
-  width: 300px;
-  -webkit-transition: width 1s ease-out;
-  transition: width 1s ease-out;
   background-position: right;
   background-color: #c7b29a;
-  height: 2rem;
-  border-radius: 5px;
+  border-radius: 15px;
   color: #ffffff;
   padding-left: 1rem;
   opacity: 1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  background-image: none;
+  height: 35px;
 }
 
 header .text {
