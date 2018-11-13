@@ -1,0 +1,62 @@
+.for_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_background;
+    padding-top: 5rem;
+
+    img {
+        align-self: flex-end;
+        margin-right: 2rem;
+    }
+
+
+    .for_mobile_text {
+        min-width: 657px;
+        width: 657px;
+        position: relative;
+    
+    }
+    h2 {
+        @include h2_light_brown;
+        text-align: left !important;
+    }
+    p {
+        @include p_dark;
+        text-align: left !important;
+        
+    }
+    details {
+        position: relative;
+        p {
+            padding-left: 6rem;
+        }
+    }
+    details summary {
+        @include p_dark;
+        text-align: left !important;
+        line-height: 2 !important;
+        text-indent: 6rem;
+        
+        outline: none;
+        cursor: pointer;
+    }
+
+
+    details summary::before {
+        content: url('../img/icon_for_summary.svg');
+        position: absolute;
+        left: -51px;
+        top: 6px;
+      }
+
+    details summary::-webkit-details-marker {
+        display: none;
+    }
+    details[open] summary::before {
+        content: url('../img/icon_for_summary.svg');
+        transform-origin: 90% 38%;
+        transform: rotate(90deg);
+        
+    }
+}
