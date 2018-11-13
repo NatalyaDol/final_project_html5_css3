@@ -138,6 +138,12 @@ header .header a.logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header span {
@@ -151,10 +157,6 @@ header .header span {
 
 header .header a.logo:hover span {
   color: #c7b299;
-}
-
-header .header nav {
-  margin-left: 90px;
 }
 
 header .header nav ul {
@@ -761,6 +763,7 @@ aside .purchase p {
   top: 31%;
   left: 910px;
   border: none;
+  outline: none;
 }
 
 .video .video-play-btn--hide {

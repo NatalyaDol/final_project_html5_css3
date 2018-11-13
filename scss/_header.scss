@@ -18,6 +18,8 @@ header {
             text-decoration: none;
             display: flex;
             align-items: center;
+            flex-grow: 1.5;
+            justify-content: center;
            
         }
         span {
@@ -34,7 +36,6 @@ header {
         
         
         nav {
-            margin-left: 90px;
             ul {
                 margin: 0;
             }

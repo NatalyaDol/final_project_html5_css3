@@ -1,6 +1,5 @@
 .video {
     width: 1920px;
-    // height: 705px;
     position: relative;
 
     h2 {
@@ -29,7 +28,6 @@
         min-width: 100%;
         width: auto;
         height: 705px;
-
         object-fit: inherit; 
     }
     .video-play-btn {
@@ -41,6 +39,7 @@
         top: 31%;
         left: 910px;
         border: none;
+        outline: none;
       }
       
     .video-play-btn--hide {
