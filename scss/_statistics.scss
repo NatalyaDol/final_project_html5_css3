@@ -1,0 +1,58 @@
+.statistics {
+    padding-top: 4.3rem;
+    background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    
+
+    .statistics_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 3rem;
+        min-width: 8.5rem;
+        
+    }
+    p {
+        @include p_big;
+        margin: 2rem 0;
+    }
+
+    
+    span {
+        @include span_300;
+        
+        text-transform: uppercase;
+    }
+
+    span:after {
+        content: "";
+        display: block;
+        background-color: $color_white;
+        width: 30px;
+        height: 1px;
+        margin-top: 3px;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 4.3rem;
+        transition: 1s;
+    } 
+
+    .statistics_box:hover  {
+        & span::after {
+            width: 60px;
+            height: 1.5px;
+            transition: 1s;
+        }
+    }
+}

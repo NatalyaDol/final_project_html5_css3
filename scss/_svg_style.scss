@@ -36,3 +36,9 @@ a.our_projects_box:hover {
 
 }
 
+.statistics svg {
+    fill: $color_hover_brown;
+    display: block;
+    margin: 0 auto;
+    transition: 1s;
+}
