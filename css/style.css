@@ -80,6 +80,16 @@ a.our_projects_box:hover .our_projects_box_hover svg {
   transition: 1s;
 }
 
+.arrow_svg_posts {
+  fill: #d1d1d1;
+  width: 22px;
+  height: 22px;
+}
+
+.arrow_svg_posts:hover {
+  fill: #c7b299;
+}
+
 a.all_button {
   display: block;
   -webkit-box-pack: center;
@@ -471,7 +481,7 @@ header .navi_circle_all a.navi_circle_2 {
   width: auto;
 }
 
-aside {
+.waxom_purchase {
   background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
   width: 100%;
@@ -484,7 +494,7 @@ aside {
           justify-content: center;
 }
 
-aside .purchase {
+.waxom_purchase .purchase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,20 +507,20 @@ aside .purchase {
   padding: 3% 0;
 }
 
-aside .purchase h2, aside .purchase p {
+.waxom_purchase .purchase h2, .waxom_purchase .purchase p {
   text-align: left;
   padding-left: 30%;
   margin: 0;
 }
 
-aside .purchase h2 {
+.waxom_purchase .purchase h2 {
   font-family: Raleway, Georgia, serif;
   color: #ffffff;
   font-size: 1.75rem;
   font-weight: 400;
 }
 
-aside .purchase h2:before {
+.waxom_purchase .purchase h2:before {
   content: "Waxom   ";
   font-family: Raleway, Georgia, serif;
   color: #c7b299;
@@ -519,12 +529,12 @@ aside .purchase h2:before {
   text-align: left;
 }
 
-aside .purchase h2:hover:before {
+.waxom_purchase .purchase h2:hover:before {
   content: "Waxom   ";
   color: #ffffff;
 }
 
-aside .purchase p {
+.waxom_purchase .purchase p {
   font-family: Montserrat;
   color: #615855;
   font-size: 1.125rem;
@@ -938,8 +948,195 @@ aside .purchase p {
 
 .statistics .statistics_box:hover span::after {
   width: 60px;
-  height: 1.5px;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.recent_posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+}
+
+.recent_posts h2 {
+  font-family: Raleway, Georgia, serif;
+  color: #555555;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.recent_posts p {
+  font-family: Montserrat, Arial, sans-serif;
+  color: #8c8c8c;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.recent_posts .recent_posts_box {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin: 0 1rem;
+  padding-bottom: 2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f8f8f8;
+  background-color: rgba(119, 119, 119, 0);
+  width: 23.125rem;
+  position: relative;
+}
+
+.recent_posts .recent_posts_box .date {
+  width: 3.13rem;
+  height: 3.13rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.recent_posts .recent_posts_box .date .date_date {
+  display: block;
+  font-family: Montserrat, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 0.833;
+  text-align: center;
+  background-color: #363636;
+  padding: 0.3rem 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #363636;
+  width: 50px;
+  height: 25px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_box .date .date_month {
+  display: block;
+  font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.667;
+  text-align: center;
+  padding: 0.3rem 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #252525;
+  width: 50px;
+  height: 25px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_box img {
+  margin-bottom: 1.81rem;
+  width: 100%;
+  height: auto;
+}
+
+.recent_posts .recent_posts_box span, .recent_posts .recent_posts_box p, .recent_posts .recent_posts_box a {
+  width: 18.56rem;
+  padding-left: 1.81rem;
+}
+
+.recent_posts .recent_posts_box span {
+  font-family: Raleway, Georgia, serif;
+  color: #555555;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.recent_posts .recent_posts_box p {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #8c8c8c;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.571;
+  text-align: left;
+}
+
+.recent_posts .recent_posts_box a {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #c7b299;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.429;
+  text-align: left;
+  text-decoration: none;
+}
+
+.recent_posts .recent_posts_box a:after {
+  content: '';
+  position: absolute;
+  left: 8rem;
+  bottom: 2.3rem;
+  border: 0.25rem solid transparent;
+  border-left: 0.44rem solid #c7b299;
+}
+
+.recent_posts .recent_posts_box:hover {
+  background-color: #362f2d;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-color: #362f2d;
+}
+
+.recent_posts .recent_posts_box:hover img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_box:hover span {
+  color: #c7b299;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_box:hover p {
+  color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_box:hover .date_date {
+  background-color: #c7b299;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_box:hover .date_month {
+  background-color: #a48d72;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent_posts .recent_posts_arrow {
+  width: 100%;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.recent_posts .recent_posts_arrow button {
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

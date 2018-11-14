@@ -42,3 +42,13 @@ a.our_projects_box:hover {
     margin: 0 auto;
     transition: 1s;
 }
+
+
+.arrow_svg_posts {
+    fill:  #d1d1d1;
+    width: 22px;
+    height: 22px;
+}
+.arrow_svg_posts:hover {
+    fill:  $color_brown_text;
+}

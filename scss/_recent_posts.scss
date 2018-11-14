@@ -1,0 +1,149 @@
+.recent_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem 0;
+    h2 {
+        @include h2_light_brown;
+        width: 100%;
+    }
+    p {
+        @include p_dark;
+        width: 100%;
+        display: block;
+        margin-bottom: 2.5rem;
+    }
+    .recent_posts_box {
+        transition: 1s;
+        margin: 0 1rem;
+        padding-bottom: 2rem;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color:  #f8f8f8;
+        background-color:  rgba(119, 119, 119, 0);
+        width: 23.125rem;
+        position: relative;
+
+        .date {
+            width: 3.13rem;
+            height: 3.13rem;
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+
+            .date_date {
+                display: block;
+                font-family: Montserrat, Arial, sans-serif;
+                color:  $color_white;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 0.833;
+                text-align: center;
+                background-color:  #363636;
+                padding: 0.3rem 0;
+
+
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                background-color:  #363636;
+                width: 50px;
+                height: 25px;
+
+                transition: 1s;
+        
+            }
+
+            .date_month {
+                display: block;
+                font-family: Roboto, Arial, sans-serif;
+                color:  $color_white;
+                font-size: 0.75rem;
+                font-weight: 400;
+                line-height: 1.667;
+                text-align: center;
+                padding: 0.3rem 0;
+
+
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                background-color:  #252525;
+                width: 50px;
+                height: 25px;
+
+                transition: 1s;
+            }
+        }
+        img {
+            margin-bottom: 1.81rem;
+            width: 100%;
+            height: auto;
+        }
+
+        span, p, a {
+            width: 18.56rem;
+            padding-left: 1.81rem;
+        }
+        span {
+            @include text_span;
+            
+        }
+        p {
+            @include text_p;
+        }
+        a {
+            @include text_a;
+            text-decoration: none;
+            
+        }
+        a:after   {
+            content: ''; 
+            position: absolute;
+            left: 8rem;
+            bottom: 2.3rem;
+            border: 0.25rem solid transparent;
+            border-left: 0.44rem solid #c7b299; 
+       }
+
+
+    }
+
+    .recent_posts_box:hover {
+        background-color:  #362f2d;
+        transition: 1s;
+        border-color: #362f2d;
+
+        & img {
+            filter: brightness(0.5);
+            transition: 1s;
+        }
+        & span {
+            color: $color_brown_text;
+            transition: 1s;
+        }
+        & p {
+            color: $color_white;
+            transition: 1s;
+        }
+        & .date_date {
+            background-color: $color_brown_text;
+            transition: 1s;
+        }
+        & .date_month {
+            background-color:  #a48d72;
+            transition: 1s;
+        }
+    }
+    .recent_posts_arrow {
+        width: 100%;
+        text-align: center;
+        padding-top: 2.5rem;
+
+        & button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+}   
