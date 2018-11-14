@@ -14,7 +14,6 @@
         margin-bottom: 2.5rem;
     }
     .recent_posts_box {
-        transition: 1s;
         margin: 0 1rem;
         padding-bottom: 2rem;
 
@@ -49,8 +48,6 @@
                 background-color:  #363636;
                 width: 50px;
                 height: 25px;
-
-                transition: 1s;
         
             }
 
@@ -71,7 +68,6 @@
                 width: 50px;
                 height: 25px;
 
-                transition: 1s;
             }
         }
         img {
@@ -115,15 +111,12 @@
 
         & img {
             filter: brightness(0.5);
-            transition: 1s;
         }
         & span {
             color: $color_brown_text;
-            transition: 1s;
         }
         & p {
             color: $color_white;
-            transition: 1s;
         }
         & .date_date {
             background-color: $color_brown_text;
