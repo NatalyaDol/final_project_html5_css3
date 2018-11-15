@@ -719,7 +719,7 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 .video {
-  width: 1920px;
+  width: 100%;
   position: relative;
 }
 
@@ -764,12 +764,10 @@ header .navi_circle_all a.navi_circle_2 {
   transition: 3s;
 }
 
-.video #video_only {
-  min-width: 100%;
-  width: auto;
-  height: 705px;
-  -o-object-fit: inherit;
-     object-fit: inherit;
+.video .video-play {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video .video-play-btn {

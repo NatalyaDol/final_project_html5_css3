@@ -1,5 +1,6 @@
 .video {
-    width: 1920px;
+    width: 100%;
+    // max-width: 1920px;
     position: relative;
 
     h2 {
@@ -23,13 +24,11 @@
         top: 68%;
         transition: 3s;
     }
-
-    #video_only {
-        min-width: 100%;
-        width: auto;
-        height: 705px;
-        object-fit: inherit; 
+    .video-play {
+        width: 100%;
+        object-fit: cover;
     }
+   
     .video-play-btn {
         display: block;
         background: url('../img/play_video.png');
