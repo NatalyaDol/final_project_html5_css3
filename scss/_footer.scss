@@ -1,0 +1,35 @@
+footer {
+    background-color:  #111111;
+    padding: 2.3rem 12%;
+    display: flex;
+    justify-content: space-between;
+
+    ul,
+    ul.left_ulpart {
+        width: 50%;
+
+        li {
+            display: inline-block;
+            padding: 0 1rem;
+            border-right: solid 1px #202020;
+
+            a {
+                text-decoration: none;
+                @include footer_text;
+                #footer_text_second_child {
+                    @include footer_text_second_child;
+                }
+            }
+            a:hover {
+                @include footer_text_hover;
+                & #footer_text_second_child {
+                    @include footer_text_second_child;
+                }
+            }
+        }
+    }
+    .left_ulpart {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

@@ -97,7 +97,7 @@
 
 
 
-// style social box
+// style the social box
 @mixin social_box_h3 {
     font-family: Raleway, Georgia, serif;
     color:  $color_white;
@@ -122,5 +122,34 @@
     line-height: 1.667;
     text-align: left;
 
+}
+
+
+// style the footer
+@mixin footer_text {
+    font-family: Montserrat, Arial, sans-seri;
+    color:  #545454;
+    font-size: 0.813rem;
+    font-weight: 300;
+    line-height: 1.538;
+    text-align: left;
+}
+
+@mixin footer_text_second_child {
+    font-family: Montserrat, Arial, sans-seri;
+    color:  #959595;
+    font-size: 0.813rem;
+    font-weight: 300;
+    line-height: 1.538;
+    text-align: left;
+}
+
+@mixin footer_text_hover {
+    font-family: Montserrat, Arial, sans-seri;
+    color: $color_brown_text;
+    font-size: 0.813rem;
+    font-weight: 300;
+    line-height: 1.538;
+    text-align: left;
 }
 

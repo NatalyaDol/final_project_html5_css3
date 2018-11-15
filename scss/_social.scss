@@ -67,14 +67,15 @@
         }
     }
     .social_box_photo {
-        width: 22%;
+        width: 17%;
         display: flex;
         flex-wrap: wrap;
         h3 {
             width: 100%;
         }
         img {
-            min-width: 7rem;
+            width: 43%;
+            min-width: 6rem;
             height: auto;
             margin: 0.5rem;
             cursor: pointer;

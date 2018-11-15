@@ -1269,7 +1269,7 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 .social .social_box_photo {
-  width: 22%;
+  width: 17%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,7 +1282,8 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 .social .social_box_photo img {
-  min-width: 7rem;
+  width: 43%;
+  min-width: 6rem;
   height: auto;
   margin: 0.5rem;
   cursor: pointer;
@@ -1293,5 +1294,78 @@ header .navi_circle_all a.navi_circle_2 {
   -webkit-transform: scale(1.2, 1.2);
   /* Safari */
   transform: scale(1.2, 1.2);
+}
+
+footer {
+  background-color: #111111;
+  padding: 2.3rem 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul,
+footer ul.left_ulpart {
+  width: 50%;
+}
+
+footer ul li,
+footer ul.left_ulpart li {
+  display: inline-block;
+  padding: 0 1rem;
+  border-right: solid 1px #202020;
+}
+
+footer ul li a,
+footer ul.left_ulpart li a {
+  text-decoration: none;
+  font-family: Montserrat, Arial, sans-seri;
+  color: #545454;
+  font-size: 0.813rem;
+  font-weight: 300;
+  line-height: 1.538;
+  text-align: left;
+}
+
+footer ul li a #footer_text_second_child,
+footer ul.left_ulpart li a #footer_text_second_child {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #959595;
+  font-size: 0.813rem;
+  font-weight: 300;
+  line-height: 1.538;
+  text-align: left;
+}
+
+footer ul li a:hover,
+footer ul.left_ulpart li a:hover {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #c7b299;
+  font-size: 0.813rem;
+  font-weight: 300;
+  line-height: 1.538;
+  text-align: left;
+}
+
+footer ul li a:hover #footer_text_second_child,
+footer ul.left_ulpart li a:hover #footer_text_second_child {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #959595;
+  font-size: 0.813rem;
+  font-weight: 300;
+  line-height: 1.538;
+  text-align: left;
+}
+
+footer .left_ulpart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
