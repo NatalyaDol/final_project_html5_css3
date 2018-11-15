@@ -1,6 +1,5 @@
 .video {
     width: 100%;
-    // max-width: 1920px;
     position: relative;
 
     .video_text {
@@ -22,6 +21,12 @@
             @include span;
             transition: 3s;
         }
+
+    }
+    
+    .video_text:hover h2, .video_text:hover p, .video_text:hover span {
+        opacity: 0;
+        transition: 3s;
 
     }
 
@@ -46,8 +51,5 @@
         display: none;
     }
 }
-// .video:hover h2, .video:hover p, .video:hover span {
-//     opacity: 0;
-//     transition: 3s;
-// }
+
 

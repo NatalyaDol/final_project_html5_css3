@@ -768,6 +768,12 @@ header .navi_circle_all a.navi_circle_2 {
   transition: 3s;
 }
 
+.video .video_text:hover h2, .video .video_text:hover p, .video .video_text:hover span {
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
 .video .video-play {
   width: 100%;
   -o-object-fit: cover;
