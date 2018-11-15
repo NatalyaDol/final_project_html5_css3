@@ -1164,4 +1164,134 @@ header .navi_circle_all a.navi_circle_2 {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
+
+.social {
+  background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5rem 0;
+}
+
+.social .social_box h3,
+.social .social_box_photo h3 {
+  font-family: Raleway, Georgia, serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.social .social_box {
+  width: 17%;
+  padding: 0 1.5rem;
+}
+
+.social .social_box p {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #545454;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.714;
+  text-align: left;
+}
+
+.social .social_box a {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #c7b299;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.429;
+  text-align: left;
+  color: #d1d1d1 !important;
+  text-decoration: none;
+  position: relative;
+}
+
+.social .social_box a:after {
+  content: '';
+  position: absolute;
+  left: 6rem;
+  top: 0.5rem;
+  border: 0.2rem solid transparent;
+  border-left: 0.44rem solid #d1d1d1;
+}
+
+.social .social_box .social_box_mini, .social .social_box .social_box_mini_last_box {
+  padding-bottom: 1.6rem;
+}
+
+.social .social_box .social_box_mini span, .social .social_box .social_box_mini_last_box span {
+  font-family: Montserrat, Arial, sans-seri;
+  color: #363636;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.667;
+  text-align: left;
+}
+
+.social .social_box .social_box_mini p, .social .social_box .social_box_mini_last_box p {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-seri;
+  color: #545454;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.714;
+  text-align: left;
+}
+
+.social .social_box .social_box_mini p #social_box_waxom, .social .social_box .social_box_mini_last_box p #social_box_waxom {
+  color: #00c1f3;
+}
+
+.social .social_box .social_box_mini p #social_box_waxom_white, .social .social_box .social_box_mini_last_box p #social_box_waxom_white {
+  color: #969696;
+}
+
+.social .social_box .social_box_mini {
+  border-bottom: solid 1px #202020;
+}
+
+.social .social_box .social_box_mini:hover p,
+.social .social_box .social_box_mini_last_box:hover p {
+  color: #ffffff;
+}
+
+.social .social_box .social_box_mini:hover span,
+.social .social_box .social_box_mini_last_box:hover span {
+  color: #c7b299;
+}
+
+.social .social_box_photo {
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social .social_box_photo h3 {
+  width: 100%;
+}
+
+.social .social_box_photo img {
+  min-width: 7rem;
+  height: auto;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.social .social_box_photo img:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.2, 1.2);
+  /* Safari */
+  transform: scale(1.2, 1.2);
+}
 /*# sourceMappingURL=style.css.map */

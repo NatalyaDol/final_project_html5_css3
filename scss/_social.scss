@@ -1,0 +1,89 @@
+.social {
+    background-color:  #191919;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 0;
+
+    .social_box,
+    .social_box_photo {
+        h3 {
+            @include social_box_h3; 
+        }
+    }
+
+    .social_box {
+        width: 17%;
+        padding: 0 1.5rem;
+
+        p {
+            @include social_box_p;     
+        }
+    
+        a {
+            @include text_a;
+            color: #d1d1d1 !important;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        a:after   {
+            content: ''; 
+            position: absolute;
+            left: 6rem;
+            top: 0.5rem;
+            border: 0.2rem solid transparent;
+            border-left: 0.44rem solid #d1d1d1;
+
+       }
+       
+        .social_box_mini, .social_box_mini_last_box {
+            padding-bottom: 1.6rem;
+            span {
+                @include social_box_date;
+            }
+            p {
+                margin: 0;
+                @include social_box_p;
+                #social_box_waxom {
+                    color: #00c1f3;
+                }
+                #social_box_waxom_white {
+                    color: #969696;
+                }
+            }
+        }
+        .social_box_mini {
+            border-bottom: solid 1px #202020;
+        }
+        .social_box_mini:hover,
+        .social_box_mini_last_box:hover {
+            & p {
+                color: $color_white;
+            }
+            & span {
+                color: $color_brown_text;
+            }
+        }
+    }
+    .social_box_photo {
+        width: 22%;
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+            width: 100%;
+        }
+        img {
+            min-width: 7rem;
+            height: auto;
+            margin: 0.5rem;
+            cursor: pointer;
+           
+        }
+        img:hover {
+            -ms-transform: scale(1.2, 1.2); /* IE 9 */
+            -webkit-transform: scale(1.2, 1.2); /* Safari */
+            transform: scale(1.2, 1.2); 
+        }
+    }
+}

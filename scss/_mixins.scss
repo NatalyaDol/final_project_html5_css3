@@ -95,3 +95,32 @@
     text-align: left;
 }
 
+
+
+// style social box
+@mixin social_box_h3 {
+    font-family: Raleway, Georgia, serif;
+    color:  $color_white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+@mixin social_box_p {
+    font-family: Montserrat, Arial, sans-seri;
+    color:  #545454;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.714;
+    text-align: left;
+}
+
+@mixin social_box_date {
+    font-family: Montserrat, Arial, sans-seri;
+    color:  #363636;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.667;
+    text-align: left;
+
+}
+
