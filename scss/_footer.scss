@@ -18,13 +18,13 @@ footer {
             a {
                 text-decoration: none;
                 @include footer_text;
-                #footer_text_second_child {
+                .footer_text_second_child {
                     @include footer_text_second_child;
                 }
             }
             a:hover {
                 @include footer_text_hover;
-                & #footer_text_second_child {
+                & .footer_text_second_child {
                     @include footer_text_second_child;
                 }
             }

@@ -1316,7 +1316,7 @@ header .navi_circle_all a.navi_circle_2 {
   text-align: left;
 }
 
-.social .social_box .social_box_mini p #social_box_waxom, .social .social_box .social_box_mini_last_box p #social_box_waxom {
+.social .social_box .social_box_mini p .social_box_waxom, .social .social_box .social_box_mini_last_box p .social_box_waxom {
   color: #00c1f3;
 }
 
@@ -1407,8 +1407,8 @@ footer ul.left_ulpart li a {
   text-align: left;
 }
 
-footer ul li a #footer_text_second_child,
-footer ul.left_ulpart li a #footer_text_second_child {
+footer ul li a .footer_text_second_child,
+footer ul.left_ulpart li a .footer_text_second_child {
   font-family: Montserrat, Arial, sans-seri;
   color: #959595;
   font-size: 0.813rem;
@@ -1427,8 +1427,8 @@ footer ul.left_ulpart li a:hover {
   text-align: left;
 }
 
-footer ul li a:hover #footer_text_second_child,
-footer ul.left_ulpart li a:hover #footer_text_second_child {
+footer ul li a:hover .footer_text_second_child,
+footer ul.left_ulpart li a:hover .footer_text_second_child {
   font-family: Montserrat, Arial, sans-seri;
   color: #959595;
   font-size: 0.813rem;
