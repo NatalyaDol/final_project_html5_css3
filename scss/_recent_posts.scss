@@ -95,16 +95,6 @@
             text-decoration: none;
             
         }
-        a:after   {
-            content: ''; 
-            position: absolute;
-            left: 8rem;
-            bottom: 2.3rem;
-            border: 0.25rem solid transparent;
-            border-left: 0.44rem solid #c7b299; 
-       }
-
-
     }
 
     .recent_posts_box:hover {

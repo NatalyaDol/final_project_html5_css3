@@ -29,16 +29,6 @@
             text-decoration: none;
             position: relative;
         }
-        
-        a:after   {
-            content: ''; 
-            position: absolute;
-            left: 6rem;
-            top: 0.5rem;
-            border: 0.2rem solid transparent;
-            border-left: 0.44rem solid #d1d1d1;
-
-       }
        
         .social_box_mini, .social_box_mini_last_box {
             padding-bottom: 1.6rem;

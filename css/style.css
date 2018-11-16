@@ -1151,15 +1151,6 @@ header .navi_circle_all a.navi_circle_2 {
   text-decoration: none;
 }
 
-.recent_posts .recent_posts_box a:after {
-  content: '';
-  position: absolute;
-  left: 8rem;
-  bottom: 2.3rem;
-  border: 0.25rem solid transparent;
-  border-left: 0.44rem solid #c7b299;
-}
-
 .recent_posts .recent_posts_box:hover {
   background-color: #362f2d;
   -webkit-transition: 1s;
@@ -1300,15 +1291,6 @@ header .navi_circle_all a.navi_circle_2 {
   color: #d1d1d1 !important;
   text-decoration: none;
   position: relative;
-}
-
-.social .social_box a:after {
-  content: '';
-  position: absolute;
-  left: 6rem;
-  top: 0.5rem;
-  border: 0.2rem solid transparent;
-  border-left: 0.44rem solid #d1d1d1;
 }
 
 .social .social_box .social_box_mini, .social .social_box .social_box_mini_last_box {
