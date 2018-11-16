@@ -2,7 +2,9 @@ footer {
     background-color:  #111111;
     padding: 2.3rem 12%;
     display: flex;
+    display: -webkit-flex; /* Safari */
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 
     ul,
     ul.left_ulpart {
@@ -30,6 +32,8 @@ footer {
     }
     .left_ulpart {
         display: flex;
+        display: -webkit-flex; /* Safari */
         justify-content: flex-end;
+        -webkit-justify-content: flex-end;
     }
 }

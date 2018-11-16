@@ -6,8 +6,10 @@
         position: absolute;
         top: 48%;
         left: 36%;
-        display: flex;
+        display: flex;         
+        display: -webkit-flex; /* Safari */
         flex-direction: column;
+        -webkit-flex-direction: column; /* Safari */
 
         h2 {
             @include h2_light_white;
@@ -23,7 +25,7 @@
         }
 
     }
-    
+
     .video_text:hover h2, .video_text:hover p, .video_text:hover span {
         opacity: 0;
         transition: 3s;

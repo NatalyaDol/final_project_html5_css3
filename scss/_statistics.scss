@@ -7,17 +7,23 @@
     background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     width: 100%;
 
-    display: flex;
+    display: flex;         
+    display: -webkit-flex; /* Safari */
     justify-content: center;
+    -webkit-justify-content: center; /* Safari */
     text-align: center;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */ 
     
     
 
     .statistics_box {
-        display: flex;
+        display: flex;         
+        display: -webkit-flex; /* Safari */
         flex-direction: column;
+        -webkit-flex-direction: column; /* Safari */
         justify-content: center;
+        -webkit-justify-content: center; /* Safari */
         text-align: center;
         margin: 0 3rem;
         min-width: 8.5rem;

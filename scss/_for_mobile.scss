@@ -1,12 +1,16 @@
 .for_mobile {
-    display: flex;
+    display: flex;         
+    display: -webkit-flex; /* Safari */
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     background-color: $color_background;
     padding-top: 5rem;
 
     img {
         align-self: flex-end;
+        -webkit-align-self: flex-end; /* Safari */
         margin-right: 2rem;
     }
 

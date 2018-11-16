@@ -1,8 +1,11 @@
 .social {
     background-color:  #191919;
-    display: flex;
+    display: flex;         
+    display: -webkit-flex; /* Safari */
     justify-content: center;
+    -webkit-justify-content: center; /* Safari */
     align-items: flex-start;
+    -webkit-align-items: center; 
     padding: 5rem 0;
 
     .social_box,
@@ -68,8 +71,10 @@
     }
     .social_box_photo {
         width: 17%;
-        display: flex;
+        display: flex;         
+        display: -webkit-flex; /* Safari */
         flex-wrap: wrap;
+        -webkit-flex-wrap: wrap; /* Safari */ 
         h3 {
             width: 100%;
         }

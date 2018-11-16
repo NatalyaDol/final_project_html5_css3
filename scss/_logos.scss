@@ -3,10 +3,14 @@
     height: 489px;
     background-image: url('../img/background_footer.jpg');
     background-size: cover;
-    display: flex;
+    display: flex;         
+    display: -webkit-flex; /* Safari */
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */ 
     justify-content: center;
+    -webkit-justify-content: center; /* Safari */
     align-items: center;
+    -webkit-align-items: center;
     padding: 2.5rem 0;
     
     a {

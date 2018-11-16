@@ -1,7 +1,10 @@
 .about_us_all {
     display: flex;
+    display: -webkit-flex; /* Safari */       
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */  
     justify-content: center;
+    -webkit-justify-content: center;
     text-decoration: none;
     text-align: center;
     padding: 60px 0;
@@ -9,8 +12,11 @@
     .about_us {
         width: 305px;
         display: flex;
+        display: -webkit-flex; /* Safari */       
         flex-wrap: wrap;
+        -webkit-flex-wrap: wrap; /* Safari */ 
         justify-content: center;
+        -webkit-justify-content: center;
         text-decoration: none;
         text-align: center;
         margin: 0 1rem 0.5rem 0;
