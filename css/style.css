@@ -468,7 +468,7 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 .about_us_all .about_us {
-  width: 305px;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,6 +504,12 @@ header .navi_circle_all a.navi_circle_2 {
   font-weight: 300;
   line-height: 1.714;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .about_us_all .about_us {
+    width: 43%;
+  }
 }
 
 .about_us_all a.about_us svg,

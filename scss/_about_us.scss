@@ -10,7 +10,7 @@
     padding: 60px 0;
     
     .about_us {
-        width: 305px;
+        width: 20%;
         display: flex;
         display: -webkit-flex; /* Safari */       
         flex-wrap: wrap;
@@ -39,6 +39,11 @@
             text-align: center;
         }
         
+    }
+    @media only screen and (max-width: 800px) {
+        .about_us {
+            width: 43%;
+        }
     }
     a.about_us svg,
     span,
