@@ -20,9 +20,9 @@ header {
 //* style mobile menu start
         label {
             display: block;
-            min-width: 50px;
-            min-height: 50px;
-            // display: none;
+            min-width: 2rem;
+            min-height: 2rem;
+            display: none;
             background-image:  url('../img/menu_mobile.svg');
             background-repeat: no-repeat;
             background-size: 100%;
@@ -254,5 +254,18 @@ header {
             opacity: 0.5;
             margin: 0 1px;
         }
+    }
+    @media only screen and (max-width: 480px) {
+        .navi_circle_all
+        {
+            display: none;
+            size: 0;
+        }
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    header {
+        height: auto;
     }
 }

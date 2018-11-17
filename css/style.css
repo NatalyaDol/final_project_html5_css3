@@ -155,8 +155,9 @@ header .header {
 
 header .header label {
   display: block;
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 2rem;
+  min-height: 2rem;
+  display: none;
   background-image: url("../img/menu_mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -430,6 +431,19 @@ header .navi_circle_all a.navi_circle_2 {
   border: 1px solid #ffffff;
   opacity: 0.5;
   margin: 0 1px;
+}
+
+@media only screen and (max-width: 480px) {
+  header .navi_circle_all {
+    display: none;
+    size: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: auto;
+  }
 }
 
 .about_us_all {
