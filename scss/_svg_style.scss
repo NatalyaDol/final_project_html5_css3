@@ -5,11 +5,11 @@ header .header {
     a.logo:hover svg {
         fill: $color_brown_text;
     }
-    a.svg_content {
+    a.svg_bag {
         fill: $color_white;
         margin-left: 6rem;
     }
-    a.svg_content:hover {
+    a.svg_bag:hover {
         fill: $color_hover_brown;
     }
 }

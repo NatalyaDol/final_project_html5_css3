@@ -47,12 +47,12 @@ header .header a.logo:hover svg {
   fill: #c7b299;
 }
 
-header .header a.svg_content {
+header .header a.svg_bag {
   fill: #ffffff;
   margin-left: 6rem;
 }
 
-header .header a.svg_content:hover {
+header .header a.svg_bag:hover {
   fill: #c7b29a;
 }
 
@@ -153,6 +153,29 @@ header .header {
   /* Safari */
 }
 
+header .header label {
+  display: block;
+  min-width: 50px;
+  min-height: 50px;
+  background-image: url("../img/menu_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header .header #menu {
+  visibility: hidden;
+}
+
+header .header input[type="checkbox"]:checked ~ .menu {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 480px) {
+  header .header label {
+    display: block;
+  }
+}
+
 header .header a.logo {
   height: 4rem;
   text-align: center;
@@ -215,6 +238,33 @@ header .header nav .menu li a:hover {
   color: #c7b29a;
 }
 
+@media only screen and (max-width: 480px) {
+  header .header nav .menu {
+    visibility: hidden;
+    margin: 0 auto;
+    height: auto;
+    width: 380px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .header nav {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .header {
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+}
+
 header input[type="search"] {
   width: 250px;
   height: 25px;
@@ -242,6 +292,13 @@ header input[type="search"]:focus {
   transition: 1.5s;
   background-image: none;
   height: 35px;
+}
+
+@media only screen and (max-width: 480px) {
+  header .svg_bag, header input[type="search"] {
+    display: none;
+    width: 0;
+  }
 }
 
 header .text {
@@ -332,6 +389,12 @@ header .text p {
   font-weight: 300;
   line-height: 1.5;
   margin: 0.875rem 0 3rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+  header .text {
+    display: none;
+  }
 }
 
 header .navi_circle_all {
