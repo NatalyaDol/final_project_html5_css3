@@ -5,7 +5,9 @@
     justify-content: center;
     -webkit-justify-content: center; /* Safari */
     align-items: flex-start;
-    -webkit-align-items: center; 
+    -webkit-align-items: flex-start;
+    align-content: flex-start;
+    -webkit-align-content: flex-start;
     padding: 5rem 0;
 
     .social_box,

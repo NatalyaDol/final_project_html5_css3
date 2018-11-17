@@ -443,6 +443,8 @@ header .navi_circle_all a.navi_circle_2 {
 @media only screen and (max-width: 480px) {
   header {
     height: auto;
+    padding-top: 0;
+    width: 100%;
   }
 }
 
@@ -1331,7 +1333,10 @@ header .navi_circle_all a.navi_circle_2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-align-content: flex-start;
   padding: 5rem 0;
 }
 
