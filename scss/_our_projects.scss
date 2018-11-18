@@ -91,6 +91,12 @@
             border-bottom: 20px solid #fbfaf8;
             transition: 1s;
         }
+        @media only screen and (max-width: 800px) {
+            h3:before {
+                content: none;
+            }
+        }
+
         h3, p {
             text-align: left;
             padding-left: 30px;
@@ -155,13 +161,36 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+// @media only screen and (max-width: 800px) {
+//     .our_projects {
+//         a.our_projects_box {
+//             h3:before {
+//                 content: '';
+//             }
+//         }
+//     }   
+// }
+@media only screen and (max-width: 750px) {
     .our_projects {
-       padding-top: 1rem;
         .box_for_our_projects_buttons {
             display: none;
         }
-
+    }
+}
+@media only screen and (max-width: 480px) {
+    .our_projects {
+       padding-top: 1rem;
     }
 
 }
+
+
+
+    // .our_projects {
+    //     a.our_projects_box {
+    //         h3:before {
+    //             content: '';
+    //         }
+    //     }
+    // }
+

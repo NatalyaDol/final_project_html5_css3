@@ -798,6 +798,12 @@ header .navi_circle_all a.navi_circle_2 {
   transition: 1s;
 }
 
+@media only screen and (max-width: 800px) {
+  .our_projects a.our_projects_box h3:before {
+    content: none;
+  }
+}
+
 .our_projects a.our_projects_box h3, .our_projects a.our_projects_box p {
   text-align: left;
   padding-left: 30px;
@@ -866,12 +872,15 @@ header .navi_circle_all a.navi_circle_2 {
   width: 100%;
 }
 
+@media only screen and (max-width: 750px) {
+  .our_projects .box_for_our_projects_buttons {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .our_projects {
     padding-top: 1rem;
-  }
-  .our_projects .box_for_our_projects_buttons {
-    display: none;
   }
 }
 
