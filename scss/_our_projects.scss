@@ -39,7 +39,7 @@
             text-align: center;
             padding: 0.3em 2em;
             margin: 0.3em;
-            border: 0.8px solid #99867522;
+            border: 0.8px solid #998675;
             border-radius: 1px;
             font-family: Montserrat, Arial, sans-serif;
             color: #8c8c8c;
@@ -47,6 +47,7 @@
             font-weight: 300;
             line-height: 1.5;
             cursor: pointer;
+            outline: none;
         }
     
         .our_projects_buttons:hover {

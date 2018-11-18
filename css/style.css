@@ -398,9 +398,6 @@ header .navi_circle_all a.navi_circle_2 {
     width: 100%;
   }
   header .header {
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -442,7 +439,6 @@ header .navi_circle_all a.navi_circle_2 {
   }
   header .navi_circle_all {
     display: none;
-    size: 0;
   }
 }
 
@@ -742,7 +738,7 @@ header .navi_circle_all a.navi_circle_2 {
   text-align: center;
   padding: 0.3em 2em;
   margin: 0.3em;
-  border: 0.8px solid #99867522;
+  border: 0.8px solid #998675;
   border-radius: 1px;
   font-family: Montserrat, Arial, sans-serif;
   color: #8c8c8c;
@@ -750,6 +746,7 @@ header .navi_circle_all a.navi_circle_2 {
   font-weight: 300;
   line-height: 1.5;
   cursor: pointer;
+  outline: none;
 }
 
 .our_projects .box_for_our_projects_buttons .our_projects_buttons:hover {
@@ -1140,9 +1137,6 @@ header .navi_circle_all a.navi_circle_2 {
   }
   .for_mobile .for_mobile_text details {
     margin: 0;
-    font-family: Montserrat, Arial, sans-serif;
-    color: #8c8c8c;
-    font-size: 0.7rem;
   }
   .for_mobile .for_mobile_text details summary {
     font-family: Montserrat, Arial, sans-serif;
@@ -1152,6 +1146,9 @@ header .navi_circle_all a.navi_circle_2 {
   }
   .for_mobile .for_mobile_text details summary::before {
     padding-left: 1rem;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 0.7rem;
   }
   .for_mobile .for_mobile_text details p {
     font-family: Montserrat, Arial, sans-serif;

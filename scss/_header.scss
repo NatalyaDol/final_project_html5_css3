@@ -224,8 +224,8 @@ header {
         height: auto;
         padding-top: 0;
         width: 100%;
+
         .header {
-            justify-content: baseline;
             display: flex;
             flex-wrap: wrap;
             padding: 2rem 2rem;
@@ -266,7 +266,7 @@ header {
         .navi_circle_all
         {
             display: none;
-            size: 0;
         }
     }
 }
+
