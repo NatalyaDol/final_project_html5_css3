@@ -891,8 +891,8 @@ header .navi_circle_all a.navi_circle_2 {
 
 .video .video_text {
   position: absolute;
-  top: 48%;
-  left: 36%;
+  top: 23%;
+  left: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,7 +903,7 @@ header .navi_circle_all a.navi_circle_2 {
       -ms-flex-direction: column;
           flex-direction: column;
   /* Safari */
-  width: 44%;
+  width: 40%;
 }
 
 .video .video_text h2 {
@@ -965,9 +965,13 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 @media only screen and (max-width: 600px) {
+  .video {
+    height: auto;
+  }
   .video .video_text {
     left: 0;
     width: 100%;
+    top: 10%;
   }
 }
 

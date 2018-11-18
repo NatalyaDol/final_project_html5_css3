@@ -4,13 +4,13 @@
 
     .video_text {
         position: absolute;
-        top: 48%;
-        left: 36%;
+        top: 23%;
+        left: 30%;
         display: flex;         
         display: -webkit-flex; /* Safari */
         flex-direction: column;
         -webkit-flex-direction: column; /* Safari */
-        width: 44%;
+        width: 40%;
 
         h2 {
             @include h2_light_white;
@@ -55,9 +55,11 @@
 
 @media only screen and (max-width: 600px) {
     .video {
+        height: auto;
         .video_text {
             left: 0;
             width: 100%;
+            top: 10%;
         }
     }
 }
