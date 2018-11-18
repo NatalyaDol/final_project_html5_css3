@@ -7,7 +7,7 @@
     -webkit-justify-content: center;
     text-decoration: none;
     text-align: center;
-    padding: 60px 0;
+    padding: 3rem 0;
     
     .about_us {
         width: 20%;
@@ -40,30 +40,36 @@
         }
         
     }
-    @media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 800px) {
+    .about_us_all {
+        padding: 1rem 0;
         .about_us {
             width: 44%;
             margin-bottom: .5rem;
         }
-    }
-    a.about_us svg,
-    span,
-    p {
-        margin: 1em 0;
-    }
-    .about_us::after {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 2px;
-        background-color:  #f1eee9;
-        margin-top: 33px;
-
-    }
-    .about_us:hover span {
-    color:  $color_brown_text;  
-    }
-    .about_us:hover:after {
-        background-color: $color_brown_text;
+    
+        a.about_us svg,
+        span,
+        p {
+            margin: 1em 0;
+        }
+        .about_us::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color:  #f1eee9;
+            margin-top: 33px;
+        
+        }
+        .about_us:hover span {
+        color:  $color_brown_text;  
+        }
+        .about_us:hover:after {
+            background-color: $color_brown_text;
+        }
     }
 }
+    

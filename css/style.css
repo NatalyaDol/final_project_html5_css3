@@ -462,7 +462,7 @@ header .navi_circle_all a.navi_circle_2 {
   -webkit-justify-content: center;
   text-decoration: none;
   text-align: center;
-  padding: 60px 0;
+  padding: 3rem 0;
 }
 
 .about_us_all .about_us {
@@ -505,33 +505,32 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 @media only screen and (max-width: 800px) {
+  .about_us_all {
+    padding: 1rem 0;
+  }
   .about_us_all .about_us {
     width: 44%;
     margin-bottom: .5rem;
   }
-}
-
-.about_us_all a.about_us svg,
-.about_us_all span,
-.about_us_all p {
-  margin: 1em 0;
-}
-
-.about_us_all .about_us::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 2px;
-  background-color: #f1eee9;
-  margin-top: 33px;
-}
-
-.about_us_all .about_us:hover span {
-  color: #c7b299;
-}
-
-.about_us_all .about_us:hover:after {
-  background-color: #c7b299;
+  .about_us_all a.about_us svg,
+  .about_us_all span,
+  .about_us_all p {
+    margin: 1em 0;
+  }
+  .about_us_all .about_us::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #f1eee9;
+    margin-top: 33px;
+  }
+  .about_us_all .about_us:hover span {
+    color: #c7b299;
+  }
+  .about_us_all .about_us:hover:after {
+    background-color: #c7b299;
+  }
 }
 
 .waxom_is_realization {
@@ -678,7 +677,7 @@ header .navi_circle_all a.navi_circle_2 {
 .our_projects {
   height: auto;
   max-width: 1200px;
-  padding-top: 83px;
+  padding-top: 5rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,6 +876,9 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 @media only screen and (max-width: 750px) {
+  .our_projects {
+    padding-top: 1rem;
+  }
   .our_projects .box_for_button {
     display: none;
   }
@@ -979,6 +981,9 @@ header .navi_circle_all a.navi_circle_2 {
 @media only screen and (max-width: 600px) {
   .video {
     height: auto;
+  }
+  .video .video-play {
+    height: 30rem;
   }
   .video .video_text {
     left: 0;
@@ -1418,6 +1423,12 @@ header .navi_circle_all a.navi_circle_2 {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1350px) {
+  .recent_posts {
+    padding: 1rem 0;
+  }
 }
 
 .logos {
