@@ -10,6 +10,7 @@
         display: -webkit-flex; /* Safari */
         flex-direction: column;
         -webkit-flex-direction: column; /* Safari */
+        width: 44%;
 
         h2 {
             @include h2_light_white;
@@ -42,12 +43,10 @@
         background: url('../img/play_video.png');
         height: 100px;
         width: 100px;
-        position: absolute;
-        top: 31%;
-        left: 47%;
         border: none;
         outline: none;
-      }
+        margin: 0 auto;
+    }
       
     .video-play-btn--hide {
         display: none;
@@ -56,11 +55,10 @@
 
 @media only screen and (max-width: 600px) {
     .video {
-        
         .video_text {
             left: 0;
+            width: 100%;
         }
-        
     }
 }
 

@@ -903,6 +903,7 @@ header .navi_circle_all a.navi_circle_2 {
       -ms-flex-direction: column;
           flex-direction: column;
   /* Safari */
+  width: 44%;
 }
 
 .video .video_text h2 {
@@ -954,11 +955,9 @@ header .navi_circle_all a.navi_circle_2 {
   background: url("../img/play_video.png");
   height: 100px;
   width: 100px;
-  position: absolute;
-  top: 31%;
-  left: 47%;
   border: none;
   outline: none;
+  margin: 0 auto;
 }
 
 .video .video-play-btn--hide {
@@ -968,6 +967,7 @@ header .navi_circle_all a.navi_circle_2 {
 @media only screen and (max-width: 600px) {
   .video .video_text {
     left: 0;
+    width: 100%;
   }
 }
 
