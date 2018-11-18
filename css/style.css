@@ -1468,7 +1468,7 @@ header .navi_circle_all a.navi_circle_2 {
     padding: 2.5rem 0;
   }
   .logos a {
-    margin: 0 1.5rem;
+    margin: 0 .5rem;
   }
 }
 
@@ -1604,6 +1604,12 @@ header .navi_circle_all a.navi_circle_2 {
   -webkit-transform: scale(1.2, 1.2);
   /* Safari */
   transform: scale(1.2, 1.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .social {
+    display: none;
+  }
 }
 
 footer {
