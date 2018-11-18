@@ -1,5 +1,7 @@
 .for_mobile {
-    display: flex;         
+    display: flex;     
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */      
     display: -webkit-flex; /* Safari */
     justify-content: center;
     -webkit-justify-content: center;
@@ -8,19 +10,23 @@
     background-color: $color_background;
     padding-top: 5rem;
 
+    .text_if_width_1300 {
+        display: none;
+    }
+
     img {
         align-self: flex-end;
         -webkit-align-self: flex-end; /* Safari */
         margin-right: 2rem;
     }
 
-
     .for_mobile_text {
-        min-width: 657px;
-        width: 657px;
+        max-width: 657px;
         position: relative;
     
     }
+
+    
     h2 {
         @include h2_light_brown;
         text-align: left !important;
@@ -61,5 +67,80 @@
         content: url('../img/icon_for_summary.svg');
         transform-origin: 90% 38%;
         transform: rotate(90deg);
+    }
+}
+// ****************MEDIA 
+
+@media only screen and (max-width: 1300px) {
+    .for_mobile {
+        padding: 2rem 2rem 0 2rem;
+        width: 100%;
+        img {
+            width: 35%;
+            height: auto;
+            margin: 0;
+        }
+
+        .text_if_width_1300 {
+            display: block;
+            width: 100%;
+           display: flex;
+           flex-direction: column;
+           h2 {
+               text-align: center !important;
+           }
+        }
+        .for_mobile_text {
+            h2 {
+                display: none;
+            }
+
+            p.if_width_1300 {
+                display: none;
+            }
+            width: 64%;
+            align-self: flex-start;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .for_mobile {
+        padding: 2rem 0 0 0.5rem;
+        width: 100%;
+        p {
+            font-family: Montserrat, Arial, sans-serif;
+            color:  #8c8c8c;
+            font-size: 0.7rem;
+        }
+        .for_mobile_text {
+            details {
+                margin: 0;
+                summary {
+                     font-family: Montserrat, Arial, sans-serif;
+                    color:  #8c8c8c;
+                    font-size: 0.7rem;
+                    text-indent: .5rem;
+                }
+                summary::before {
+                    padding-left: 1rem;
+                }
+
+                font-family: Montserrat, Arial, sans-serif;
+                color:  #8c8c8c;
+                font-size: 0.7rem;
+    
+                p {
+                    font-family: Montserrat, Arial, sans-serif;
+                    color:  #8c8c8c;
+                    font-size: 0.7rem !important;
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+        }
+       
     }
 }

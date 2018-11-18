@@ -969,6 +969,10 @@ header .navi_circle_all a.navi_circle_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  /* Safari */
   display: -webkit-flex;
   /* Safari */
   -webkit-box-pack: center;
@@ -983,6 +987,10 @@ header .navi_circle_all a.navi_circle_2 {
   padding-top: 5rem;
 }
 
+.for_mobile .text_if_width_1300 {
+  display: none;
+}
+
 .for_mobile img {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -992,8 +1000,7 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 .for_mobile .for_mobile_text {
-  min-width: 657px;
-  width: 657px;
+  max-width: 657px;
   position: relative;
 }
 
@@ -1055,6 +1062,78 @@ header .navi_circle_all a.navi_circle_2 {
           transform-origin: 90% 38%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 1300px) {
+  .for_mobile {
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+  }
+  .for_mobile img {
+    width: 35%;
+    height: auto;
+    margin: 0;
+  }
+  .for_mobile .text_if_width_1300 {
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .for_mobile .text_if_width_1300 h2 {
+    text-align: center !important;
+  }
+  .for_mobile .for_mobile_text {
+    width: 64%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .for_mobile .for_mobile_text h2 {
+    display: none;
+  }
+  .for_mobile .for_mobile_text p.if_width_1300 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .for_mobile {
+    padding: 2rem 0 0 0.5rem;
+    width: 100%;
+  }
+  .for_mobile p {
+    font-family: Montserrat, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 0.7rem;
+  }
+  .for_mobile .for_mobile_text details {
+    margin: 0;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 0.7rem;
+  }
+  .for_mobile .for_mobile_text details summary {
+    font-family: Montserrat, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 0.7rem;
+    text-indent: .5rem;
+  }
+  .for_mobile .for_mobile_text details summary::before {
+    padding-left: 1rem;
+  }
+  .for_mobile .for_mobile_text details p {
+    font-family: Montserrat, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 0.7rem !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .statistics {
