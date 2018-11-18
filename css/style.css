@@ -696,6 +696,10 @@ header .navi_circle_all a.navi_circle_2 {
   /* Safari */
 }
 
+.our_projects #box_for_button_and_our_projects_if_small_width {
+  display: none;
+}
+
 .our_projects .all_button .project_box {
   display: block;
 }
@@ -873,14 +877,22 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 @media only screen and (max-width: 750px) {
+  .our_projects .box_for_button {
+    display: none;
+  }
   .our_projects .box_for_our_projects_buttons {
     display: none;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  .our_projects {
-    padding-top: 1rem;
+  .our_projects .our_projects_box {
+    display: none;
+  }
+  .our_projects #box_for_button_and_our_projects_if_small_width {
+    display: block;
+  }
+  .our_projects #box_for_button_and_our_projects_if_small_width #button_if_small_width:focus ~ .our_projects_box {
+    display: block;
+    margin: 0 auto;
+    margin-top: .5rem;
   }
 }
 
