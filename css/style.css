@@ -965,6 +965,12 @@ header .navi_circle_all a.navi_circle_2 {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .video .video_text {
+    left: 0;
+  }
+}
+
 .for_mobile {
   display: -webkit-box;
   display: -ms-flexbox;
