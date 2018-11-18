@@ -596,6 +596,12 @@ header .navi_circle_all a.navi_circle_2 {
   width: auto;
 }
 
+@media only screen and (max-width: 480px) {
+  .waxom_is_realization {
+    display: none;
+  }
+}
+
 .waxom_purchase {
   background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
@@ -661,6 +667,12 @@ header .navi_circle_all a.navi_circle_2 {
   color: #615855;
   font-size: 1.125rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+  .waxom_purchase {
+    display: none;
+  }
 }
 
 .our_projects {
@@ -745,7 +757,9 @@ header .navi_circle_all a.navi_circle_2 {
 
 .our_projects a.our_projects_box {
   width: 370px;
+  min-width: 310px;
   height: 337px;
+  min-height: 310px;
   margin: 30px 15px 0 15px;
   background-color: #fbfaf8;
   text-decoration: none;
@@ -769,6 +783,8 @@ header .navi_circle_all a.navi_circle_2 {
 .our_projects a.our_projects_box img {
   -webkit-transition: 1s;
   transition: 1s;
+  width: 100%;
+  height: auto;
 }
 
 .our_projects a.our_projects_box h3:before {
@@ -848,6 +864,15 @@ header .navi_circle_all a.navi_circle_2 {
 
 .our_projects .box_for_button {
   width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .our_projects {
+    padding-top: 1rem;
+  }
+  .our_projects .box_for_our_projects_buttons {
+    display: none;
+  }
 }
 
 .video {

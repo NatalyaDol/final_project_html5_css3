@@ -55,7 +55,9 @@
 
     a.our_projects_box {
         width: 370px;
+        min-width: 310px;
         height: 337px;
+        min-height: 310px;
         margin: 30px 15px 0 15px;
         background-color:  #fbfaf8;
         text-decoration: none;
@@ -76,6 +78,8 @@
 
         img {
             transition: 1s;
+            width: 100%;
+            height: auto;
         }
 
         h3:before {
@@ -149,4 +153,15 @@
     .box_for_button {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    .our_projects {
+       padding-top: 1rem;
+        .box_for_our_projects_buttons {
+            display: none;
+        }
+
+    }
+
 }
