@@ -8,7 +8,8 @@ header {
     width: 100%;
     padding-top: 2.5rem;
     .header {
-        display: flex;       
+        display: flex;  
+        // flex-wrap: wrap;     
         display: -webkit-flex; /* Safari */
         align-items: center;
         -webkit-align-items: center;
@@ -17,31 +18,6 @@ header {
         align-content: stretch;
         -webkit-align-content: stretch; /* Safari */
 
-//* style mobile menu start
-        label {
-            display: block;
-            min-width: 2rem;
-            min-height: 2rem;
-            display: none;
-            background-image:  url('../img/menu_mobile.svg');
-            background-repeat: no-repeat;
-            background-size: 100%;
-          }
-          
-          #menu {
-              visibility: hidden;
-            }
-            
-            input[type="checkbox"]:checked ~ .menu {
-                visibility: visible;
-            }
-            
-            @media only screen and (max-width: 480px) {
-                label {
-                    display: block;
-                    }
-            }
-//* style mobile menu end
         a.logo {
             height: 4rem;
             text-align: center;
@@ -68,17 +44,33 @@ header {
             color: $color_brown_text;
         }
         
-        
+        .menu_lab {
+            min-width: 2rem;
+            min-height: 2rem;
+            display: none;
+            background-image:  url('../img/menu_mobile.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;    
+            
+        }
+        input[type="checkbox"]:checked ~ nav {
+            display: block;
+        }
+        #menu {
+            display: none;
+        }
+     
         nav {
-            ul {
-                margin: 0;
-            }
-            .menu li {
+
+            .menu {
                 list-style-type: none;
-                float: left;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                height: 60px;
+                padding: 0;
             }
-
-
+                
             .menu li a {
                 display: inline-block;
                 text-decoration: none;
@@ -92,27 +84,8 @@ header {
             .menu li a:hover {
                 color: #c7b29a;
             }
-            @media only screen and (max-width: 480px) {
-                .menu {
-                    visibility: hidden;
-                    margin: 0 auto;
-                    height: auto;
-                    width: 380px;
-                    flex-direction: column;
-                }
-            }
-
         }
-        @media only screen and (max-width: 480px) {
-            nav {
-                width: 0;
-            }
-        }
-     }
-     @media only screen and (max-width: 480px) {
-         .header {
-             justify-content: baseline;
-         }
+        
      }
 
      input[type="search"] {
@@ -142,12 +115,6 @@ header {
         height: 35px;
     }
 
-    @media only screen and (max-width: 480px) {
-        .svg_bag, input[type="search"] {
-            display: none;
-            width: 0;
-        }
-    }
     .text {
         padding: 15rem 9.375rem 0 9.375rem;
         display: flex;         
@@ -220,11 +187,6 @@ header {
             margin: 0.875rem 0 3rem 0;
         } 
     }
-    @media only screen and (max-width: 480px) {
-        .text {
-            display: none;
-        }
-    }
 
     .navi_circle_all {
         display: flex;         
@@ -255,19 +217,57 @@ header {
             margin: 0 1px;
         }
     }
-    @media only screen and (max-width: 480px) {
+}
+
+
+@media only screen and (max-width: 1300px) {
+    header {
+        height: auto;
+        padding-top: 0;
+        width: 100%;
+        .header {
+            justify-content: baseline;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem 2rem;
+
+            a.logo {
+                justify-content: left;
+            }
+
+           
+            .menu_lab {
+                display: block;
+            }
+            
+            nav {
+                display: none;
+                width: 100%;
+                .menu {
+                    width: 100%;
+                    margin: 0 auto;
+                    height: auto;
+                    flex-direction: column; 
+                    text-align: center; 
+                    width: 100%; 
+                }
+            }
+            input[type="checkbox"]:checked ~ nav {
+                display: block;
+            }
+            
+            
+            .svg_bag, input[type="search"] {
+                display: none;
+            }
+        }
+        .text {
+            display: none;
+        }
         .navi_circle_all
         {
             display: none;
             size: 0;
         }
-    }
-    
-}
-@media only screen and (max-width: 480px) {
-    header {
-        height: auto;
-        padding-top: 0;
-        width: 100%;
     }
 }
