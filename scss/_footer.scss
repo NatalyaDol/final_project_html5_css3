@@ -37,3 +37,24 @@ footer {
         -webkit-justify-content: flex-end;
     }
 }
+
+@media only screen and (max-width: 1350px) {
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        padding: 2.3rem 1rem;
+        ul,
+        ul.left_ulpart {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex; /* Safari */
+            justify-content: center;
+            -webkit-justify-content: center;
+            padding: 0 .4rem;
+            li {
+                padding: 0 .2rem;
+            }
+        }
+    }
+}
