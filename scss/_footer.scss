@@ -43,7 +43,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         -webkit-justify-content: center;
-        padding: 2.3rem 1rem;
+        padding: 2.3rem .3rem;
         ul,
         ul.left_ulpart {
             width: 100%;
@@ -51,9 +51,9 @@ footer {
             display: -webkit-flex; /* Safari */
             justify-content: center;
             -webkit-justify-content: center;
-            padding: 0 .4rem;
+            padding: 0 .1rem;
             li {
-                padding: 0 .2rem;
+                padding: 0 .1rem;
             }
         }
     }
