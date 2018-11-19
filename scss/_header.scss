@@ -243,7 +243,13 @@ header {
             a.logo {
                 width: 100%;
             }
-        }    
+        }  
+        .text {
+            padding: 5rem 1rem 0 1rem;
+        }  
+        .navi_circle_all {
+            padding-top: 4rem;
+        } 
     }
 }
 @media only screen and (max-width: 780px) {
