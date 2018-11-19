@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -509,7 +510,7 @@ header .navi_circle_all a.navi_circle_2 {
   -webkit-justify-content: center;
   text-decoration: none;
   text-align: center;
-  margin: 0 1rem 0.5rem 0;
+  margin: 0 0.5rem;
 }
 
 .about_us_all .about_us span {
@@ -704,7 +705,7 @@ header .navi_circle_all a.navi_circle_2 {
 .our_projects {
   height: auto;
   max-width: 1200px;
-  padding-top: 5rem;
+  padding: 5rem 1rem 0;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1021,6 +1022,9 @@ header .navi_circle_all a.navi_circle_2 {
 }
 
 .for_mobile {
+  /* Для Firefox */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1158,7 +1162,7 @@ header .navi_circle_all a.navi_circle_2 {
 
 @media only screen and (max-width: 500px) {
   .for_mobile {
-    padding: 2rem 0 0 0.5rem;
+    padding: 2rem 1rem 1rem 1rem;
     width: 100%;
   }
   .for_mobile p {
@@ -1295,7 +1299,7 @@ header .navi_circle_all a.navi_circle_2 {
           justify-content: center;
   -webkit-justify-content: center;
   /* Safari */
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 
 .recent_posts h2 {

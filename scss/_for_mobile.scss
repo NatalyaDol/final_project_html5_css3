@@ -1,4 +1,6 @@
 .for_mobile {
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
     display: flex;     
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap; /* Safari */      
@@ -106,7 +108,7 @@
 
 @media only screen and (max-width: 500px) {
     .for_mobile {
-        padding: 2rem 0 0 0.5rem;
+        padding: 2rem 1rem 1rem 1rem;
         width: 100%;
         p {
             font-family: Montserrat, Arial, sans-serif;
