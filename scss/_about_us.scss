@@ -1,20 +1,24 @@
 .about_us_all {
     display: flex;
-    display: -webkit-flex; /* Safari */       
+    display: -webkit-flex;
+    /* Safari */
     flex-wrap: wrap;
-    -webkit-flex-wrap: wrap; /* Safari */  
+    -webkit-flex-wrap: wrap;
+    /* Safari */
     justify-content: center;
     -webkit-justify-content: center;
     text-decoration: none;
     text-align: center;
     padding: 3rem 0;
-    
+
     .about_us {
         width: 20%;
         display: flex;
-        display: -webkit-flex; /* Safari */       
+        display: -webkit-flex;
+        /* Safari */
         flex-wrap: wrap;
-        -webkit-flex-wrap: wrap; /* Safari */ 
+        -webkit-flex-wrap: wrap;
+        /* Safari */
         justify-content: center;
         -webkit-justify-content: center;
         text-decoration: none;
@@ -30,6 +34,7 @@
             text-align: center;
             min-width: 189px;
         }
+
         p {
             font-family: Montserrat, Arial, Helvetica, sans-serif;
             color: #8c8c8c;
@@ -38,38 +43,41 @@
             line-height: 1.714;
             text-align: center;
         }
-        
+    }
+
+    .about_us::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: #f1eee9;
+        margin-top: 33px;
+
+    }
+
+    .about_us:hover span {
+        color: $color_brown_text;
+    }
+
+    .about_us:hover:after {
+        background-color: $color_brown_text;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .about_us_all {
         padding: 1rem 0;
+
         .about_us {
             width: 44%;
             margin-bottom: .5rem;
         }
-    
+
         a.about_us svg,
         span,
         p {
             margin: 1em 0;
         }
-        .about_us::after {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 2px;
-            background-color:  #f1eee9;
-            margin-top: 33px;
-        
-        }
-        .about_us:hover span {
-        color:  $color_brown_text;  
-        }
-        .about_us:hover:after {
-            background-color: $color_brown_text;
-        }
+
     }
 }
-    

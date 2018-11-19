@@ -532,6 +532,23 @@ header .navi_circle_all a.navi_circle_2 {
   text-align: center;
 }
 
+.about_us_all .about_us::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #f1eee9;
+  margin-top: 33px;
+}
+
+.about_us_all .about_us:hover span {
+  color: #c7b299;
+}
+
+.about_us_all .about_us:hover:after {
+  background-color: #c7b299;
+}
+
 @media only screen and (max-width: 800px) {
   .about_us_all {
     padding: 1rem 0;
@@ -544,20 +561,6 @@ header .navi_circle_all a.navi_circle_2 {
   .about_us_all span,
   .about_us_all p {
     margin: 1em 0;
-  }
-  .about_us_all .about_us::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 2px;
-    background-color: #f1eee9;
-    margin-top: 33px;
-  }
-  .about_us_all .about_us:hover span {
-    color: #c7b299;
-  }
-  .about_us_all .about_us:hover:after {
-    background-color: #c7b299;
   }
 }
 
@@ -705,7 +708,7 @@ header .navi_circle_all a.navi_circle_2 {
 .our_projects {
   height: auto;
   max-width: 1200px;
-  padding: 5rem 1rem 0;
+  padding: 5rem 1rem 0 1rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
