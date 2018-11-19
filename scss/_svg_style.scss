@@ -12,6 +12,11 @@ header .header {
     a.svg_bag:hover {
         fill: $color_hover_brown;
     }
+    @media only screen and (max-width: 1300px) {
+        a.svg_bag {
+            display: none;
+        }
+    }
 }
 
 
