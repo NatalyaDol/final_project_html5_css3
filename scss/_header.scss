@@ -221,10 +221,16 @@ header {
 }
 
 @media only screen and (max-width: 1300px) {
-    .header {
-        form {
-            display: none;  
+    header {
+        .header {
+            form {
+                display: none;  
+            }
         }
+        .text {
+            width: 88%;
+            padding: 15rem 2rem 0 2rem;
+        } 
     }
 }
 @media only screen and (max-width: 950px) {
@@ -237,11 +243,7 @@ header {
             a.logo {
                 width: 100%;
             }
-        }
-
-        .text {
-            padding: 5rem 3rem 0 3rem;
-        }     
+        }    
     }
 }
 @media only screen and (max-width: 780px) {
